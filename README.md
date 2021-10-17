@@ -1,5 +1,5 @@
 # What is this ?
-This is all of my NSI courses.
+This is all of my NSI courses in 1er and in Terminal in the Thierry Maulnier School of Nice.
 
 # Credits
 **nt games** for working, doing the exercises and do some python scripts.  
