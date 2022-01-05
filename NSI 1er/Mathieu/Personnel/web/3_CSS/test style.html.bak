@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<!-- En-tête de la page -->
+	<head>
+		<meta charset="utf-16" />
+		<link rel="stylesheet" href="style.css">
+		<title> Test CSS </title>
+	</head>
+	
+	<!-- Visuel de la page -->
+	<body>
+		<header>
+			test header
+			<nav>test nav</nav>
+		</header>
+	</body>
+</html>
