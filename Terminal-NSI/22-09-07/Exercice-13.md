@@ -1,0 +1,2 @@
+# Chapitre 1 - Exercice 13
+Selon moi, ces handicaps permettent de simulé notre logique et de voir notre façon à nous adapter. En effet, ces handicaps sont concentrées sur les listes or dans la vie de tout les jours on ne va pas forcément utiliser des listes pour tout ce que l'on entreprend. Grâce à ces hanticaps on va essayer de trouve un moyen de s'adapter et d'adapter notre code pour faire en sorte de les utiliser. Cela nous poussera donc à réfléchir d'avantages et ainsi être plus à l'aire avec pour le futur.

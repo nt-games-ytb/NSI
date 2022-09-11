@@ -1,0 +1,177 @@
+<html>
+  <head>
+    <title>Router Firewall Configuration</title>
+  </head>
+
+  <body>
+:errorMsg:
+    <form action=":action_pfad:" method="POST">
+    <center> <table border="0" cellspacing="5" width="400"> <tr><td> <h2>Router Firewall Configuration</h2> </td></tr><tr><td>
+      <table bgcolor="#E0E0E0" border="0" width="100%" cellpadding="5">
+        <tr><td align="center">
+          <table border="0" cellpadding="5">
+            <tr>
+              <td width="10%">
+:firewallActivate:
+              </td>
+              <td width="90%">Activate firewall</td>
+            </tr>
+            <tr>
+              <td colspan="2">
+                Firewall rules will only be applied, if the firewall is activated. 
+		In the case of a not activated firewall no packet filtering will take place.
+              </td>
+            </tr>
+	    <tr>
+              <td>
+:dropICMP:
+              </td>
+              <td>Filter ICMP packets</td>
+            </tr>
+            <tr>
+              <td colspan="2">
+                All ICMP packets, e.g., ping requests, will be dropped.
+              </td>
+            </tr>
+            <tr>
+              <td>
+:onlySYN:
+              </td>
+	      <td>
+	        only drop SYN packets
+	      </td>
+	    </tr>
+	    <tr>
+              <td colspan="2">
+                New connection requests to blocked ports will be dropped.
+		Back channels for allowed connection requests will be accepted.
+	      </td>
+            </tr>
+          </table>
+      </tr>
+        <tr>
+          <td><input type="submit" name="btnSave" value="save"></td>
+        </tr>
+      </table>
+
+    </td></tr><tr><td>
+
+
+    <!-- Konfiguration der Regeln -->
+      <table  border="0" bgcolor="#E0E0E0" width="100%" cellpadding="5">
+        <tr>
+          <td>
+            <h3>Firewall rules:</h3><br>
+            The rules are evaluated from top to bottom.<br>
+            If a rule matches, the given action will be followed.
+          </td>
+        </tr>
+        <tr>
+          <td>
+            If no rule applies, the following default policy is used:<br>
+            <select name="defaultPolicy" size="1">
+              <option value="drop"
+:defPolDropSelected:          
+              >drop</option>
+              <option value="accept"
+:defPolAcceptSelected:        
+              >accept</option>
+            </select>
+            <input type="submit" name="defPolSet" value="speichern">
+          </td>
+        </tr>
+        <tr>
+          <td>
+          <font size="-2">
+            <table border="1" width="100%">
+              <tr>
+                <th>no.</th>
+                <th>source IP</th>
+                <th>source subnet mask</th>
+                <th>dest. IP</th>
+                <th>dest. subnet mask</th>
+                <th>protocol</th>
+                <th>port</th>
+                <th>action</th>
+              </tr>
+
+:ruleset:
+
+            </table>
+          </font>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Action for selected rule:
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <input type="submit" name="moveup" value="move upwards">
+            <input type="submit" name="movedown" value="move downwards">
+            <input type="submit" name="delrule" value="delete">
+          </td>
+        </tr>
+      </table>
+
+    </td></tr><tr><td>
+
+:errorMsg:
+    <!-- Konfiguration neuer Regeln -->
+      <table  border="0" bgcolor="#E0E0E0" width="100%" cellpadding="5">
+        <tr>
+          <td colspan="2">
+            <h3>Create new rule</h3><br>
+            All fields are optional and will be<br> -- if empty --<br> ignored for filtering.
+          </td>
+        </tr>
+        <tr>
+          <td width="30%">source IP: </td>
+          <td width="70%"><input name="srcIP" type="text" size="15" maxlength="15" value=":srcIP:"></td>
+        </tr>
+        <tr>
+          <td>source subnet mask: </td>
+          <td><input name="srcMask" type="text" size="15" maxlength="15" value=":srcMask:"></td>
+        </tr>
+        <tr>
+          <td>dest. IP: </td>
+          <td> <input name="destIP" type="text" size="15" maxlength="15" value=":destIP:"></td>
+        </tr>
+        <tr>
+          <td>dest. subnet mask: </td>
+          <td> <input name="destMask" type="text" size="15" maxlength="15" value=":destMask:"></td>
+        </tr>
+        <tr>
+          <td>protocol: </td>
+          <td>
+            <select name="protocol" size="1">
+              <option value="*" :optionProtAll:>*</option>
+              <option value="TCP" :optionProtTCP:>TCP</option>
+              <option value="UDP" :optionProtUDP:>UDP</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td>port: </td>
+          <td> <input name="port" type="text" size="5" maxlength="5" value=":port:"></td>
+        </tr>
+        <tr>
+          <td>action: </td>
+          <td>
+            <select name="action" size="1">
+              <option value="drop" :optionActionDrop:>drop</option>
+              <option value="accept" :optionActionAccept>accept</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2">
+            <input type="submit" name="addrule" value="add rule">
+          </td>
+        </tr>
+      </table>
+    </td></tr></table></center>
+    </form>
+  </body>
+</html>

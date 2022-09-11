@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jnlp spec="1.0+" codebase="https://interstices.info/wp-content/uploads/jalios/crepes/">
+<resources>
+<jar href="HelixUtils.jar"/>
+<jar href="crepe.jar"/>
+<jar href="xlayouts.jar"/>
+</resources>
+<applet-desc main-class="helix.isee.gui.DefApplet.class" name="ISee" width="600" height="500">
+<param name="ALGO" value="helix.isee.modules.crepe.CrepeAlgo" /><param name="SETVISU" value="0" />
+</applet-desc>

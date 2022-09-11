@@ -1,0 +1,14 @@
+<html>
+  <head>
+    <title>Router Administration</title>
+  </head>
+  <body>
+    <h1>Firewall Administration</h1>
+    <p> <a href="konfig">Configuration</a> </p>
+    <p> <a href="log">Show Log</a> </p>
+
+    <h1> Routing/Forwarding </h1>
+    <p> <a href="routes"> Show current routing/forwarding table </a> </p>
+    
+  </body>
+</html>

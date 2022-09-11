@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <!-- En-tête de la page -->
+	<head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.00, maximum-scale=2.00, minimum-scale=0.25">
+		<meta charset="utf-16" />
+		<link rel="stylesheet" href="style.css">
+        <!-- <link rel="script" href="index.js"> -->
+        
+        <!-- CSS Publique utiliser pour le dark mode (images) : -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+        
+		<title> Le C# - TORO Nicolas </title>
+	</head>
+	
+	<!-- Visuel de la page -->
+    <body>
+        <!-- Header : -->
+        <header>
+            <!-- Titre : -->
+            <div id="titre_principale">
+                <h1>
+                    <img src="img\csharp.png" id="logo"  alt="Pastor"></img>
+                    Le CSharp / C#
+                </h1>
+                <h2>Tout savoir sur ce langage !</h2>
+            </div>
+            
+            <!-- Nav bar : -->
+            <nav>
+                <ul>
+                    <li><a href="#quoi"><button>C'est quoi le C# ?</button></a></li>
+                    <li><a href="#expérience"><button>Mon experience personnel</button></a></li>
+                    <li><a href="#logiciels"><button>Les différents logiciels</button></a></li>
+                    <li><a href="#extensions"><button>Les meilleures exentension</button></a></li>
+                    <li><a href="#design"><button>Le design facile</button></a></li>
+                    <li><a href="#défaults"><button>Les défaults du C#</button></a></li>
+                    <li><a href="#protéger"><button>Protéger son code</button></a></li>
+                    <li><a href="#tutoriels"><button>Tutoriels</button></a></li>
+                    <li><a href="#aide"><button>Un problème ? Besoin d'aide ?</button></a></li>
+                    <li><a href="#contact"><button>Contact/Crédits</button></a></li>
+                    <a href="#" id="hamburgeur"><img src="img/hamburgeur.png"></img></a>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- Dark Mode -->
+        <div class="toggle">
+            <a>Mode nuit :</a>
+            <input type="checkbox" class="checkbox" id="dark-mode" />
+            <label for="dark-mode" class="label">
+              <i class="fas fa-sun"></i>
+              <i class="fas fa-moon"></i>
+              <div class="ball"></div>
+            </label>
+        </div>
+
+        <!-- Corps de la page : -->
+        <div class="corps">
+            <table cellspacing="25">
+                <tr>
+                    <!-- C'est quoi le C# ? -->
+                    <td id="quoi">
+                        <h2>C'est quoi le C# ?</h2>
+                        <div class="texte">
+                            <p>
+                                Le C# (Csharp en anglais britannique) est un langage de <a href="https://fr.wikipedia.org/wiki/Programmation_orient%C3%A9e_objet">programmation orientée objet</a>,</br>
+                                commercialisé par <a href="https://fr.wikipedia.org/wiki/Microsoft">Microsoft</a> depuis 2002 et destiné à développer sur la plateforme <a href="https://fr.wikipedia.org/wiki/Microsoft_.NET">Microsoft .NET</a>.
+                            </p>
+                            <p>
+                                Il est dérivé du <a href="https://fr.wikipedia.org/wiki/C%2B%2B">C++</a> et très proche du <a href="https://fr.wikipedia.org/wiki/Java_(langage)">Java</a> dont il reprend la syntaxe générale ainsi que les concepts,</br>
+                                y ajoutant des notions telles que la surcharge des opérateurs, les indexeurs et les délégués.</br>
+                                Il est utilisé notamment pour développer des applications web sur la plateforme <a href="https://fr.wikipedia.org/wiki/ASP.NET">ASP.NET</a>.
+                            </p>
+                            <h3>Exemple d'un 'Hello World' sur console :</h3>
+                            <img src="img/exemple code.png" title="Exemple d'un 'Hello World' sur console d'execution"></img>
+                        </div>
+                    </td>
+                    
+                    <!-- Mon expérience personnel -->
+                    <td id="expérience">
+                        <h2>Mon expérience personnel</h2>
+                        <div class="texte">
+                            <p>
+                                J'ai moi même (l'auteur du site) fait usage à ce langage pour des projets privé et publique.</br>
+                                C'est un langage que j'apprécie tout particulièrement pour :</br>
+                                - sa simplicité (à une époque, je le trouvais même plus facie que le  langage <a href="https://fr.wikipedia.org/wiki/Python_(langage)">Python</a>)</br>
+                                - sa communautée grandissante toujours la pour t'aider en cas de problème</br>
+                                - son utilité (ce langage s'utilise pour tout, des simples logiciels ou des jeux vidéos avec <a href="https://fr.wikipedia.org/wiki/Unity_(moteur_de_jeu)">Unity</a></br>
+                                ou des applications Web avec <a href="https://fr.wikipedia.org/wiki/Blazor">Brazzor</a> ou même des applications mobile [Android et IOS] avec <a href="https://fr.wikipedia.org/wiki/Xamarin">Xamarin</a>)</br>
+                                et aussi bien parce que c'est un des tout premier langage que j'ai utilisé.</br>
+                            </p>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+
+            <table cellspacing="25">
+                <tr>
+                    <!-- Les différents logiciels -->
+                    <td id="logiciels">
+                        <h2>Les différents logiciels</h2>
+                        <div class="texte">
+                            <p>
+                                Bien que ce langage est était commercialisé par <a href="https://fr.wikipedia.org/wiki/Microsoft">Microsoft</a>,</br>
+                                d'autres entreprise on voulu créer leur propre logiciel/<a href="https://fr.wikipedia.org/wiki/Environnement_de_d%C3%A9veloppement">IDE</a> (Environnement de développement).</br>
+                                Je vous conseille donc ces 3 logiciels :
+                            </p>
+
+                            <h3>1. Visual Studio 2019/2022 :</h3>
+                            <p>
+                                Avec ses nombreux atouts et ses nombreuses version, Visual Studio est sans doute le plus connu</br>
+                                et le plus utilisé en terme de logiciel de développement.</br>
+                                Il est sans cesse mit à jour et comporte de nombreuses qualitées qui fait son charme.
+                            </p>
+                            <img class="logo" src="img/visual studio.png" alt="Logo de Visual Studio">
+                                <figcaption><a href="https://visualstudio.microsoft.com/fr/">Télécharger Visual Studio 2022</a></figcaption>
+                            </img>
+
+                            <h3>2. SharpDevelop :</h3>
+                            <p>
+                                SharpDevelop est un environnement de développement intégré Open Source,</br>
+                                et permet le développement d'application en Visual Basic .NET et en C#.</br>
+                                Il fait partie, avec <a href="https://fr.wikipedia.org/wiki/MonoDevelop">MonoDevelop</a> des alternatives à Visual Studio.Net de Microsoft.</br>
+                                (SharpDevelop fonctionne uniquement avec Windows)
+                            </p>
+                            <img class="logo" src="img/SharpDevelop.png" alt="Logo de SharpDevelop">
+                                <figcaption><a href="https://sharpdevelop.fr.uptodown.com/windows">Télécharger SharpDevelop</a></figcaption>
+                            </img>
+
+                            <h3>3. MonoDevelop :</h3>
+                            <p>
+                                MonoDevelop est un environnement de développement intégré libre de GNOME</br>
+                                conçu pour C# et les autres langages .NET.</br>
+                                MonoDevelop fait partie du projet Mono. Initialement une réécriture de <a href="https://fr.wikipedia.org/wiki/SharpDevelop">SharpDevelop</a> pour <a href="https://fr.wikipedia.org/wiki/GTK%2B">GTK+</a>,</br>
+                                il a évolué à plusieurs reprises depuis son portage.
+                            </p>
+                            <img class="logo" src="img/MonoDevelop.png" alt="Logo de MonoDevelop">
+                                <figcaption><a href="https://www.monodevelop.com/download/">Télécharger MonoDevelop</a></figcaption>
+                            </img>
+
+                            <p style="margin-top:10%;">
+                                Bien sur, ce ne sont pas les seuls logiciels, il en existe bien d'autre et si vous voulez en savoir plus,</br>
+                                vous pouvez aller sur ce site : <a href="https://www.logitheque.com/windows/programmation/c-et-c">https://www.logitheque.com/windows/programmation/c-et-c</a></br>
+                                Il répertorit de nombreux logiciels de développement.
+                            </p>
+                        </div>
+                    </td>
+
+                    <!-- Les meilleures extensions -->
+                    <td id="extensions">
+                        <h2>Les meilleures extensions</h2>
+                        <div class="texte">
+                            <p>
+                                
+                            </p>
+                        </div>
+                    </td>
+
+                    <!-- Le design facile -->
+                    <td id="design">
+                        <h2>Le design facile</h2>
+                        <div class="texte">
+                            <p>
+                                
+                            </p>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+
+            <table cellspacing="25">
+                <tr>
+                    <!-- Les défaults du C# -->
+                    <td id="défaults">
+                        <h2>Les défaults du C#</h2>
+                        <div class="texte">
+                            <p>
+                                
+                            </p>
+                        </div>
+                    </td>
+
+                    <!-- Protéger son code -->
+                    <td id="protéger">
+                        <h2>Protéger son code</h2>
+                        <div class="texte">
+                            <p>
+                                
+                            </p>
+                        </div>
+                    </td>
+                </tr>
+
+                <tr>
+                    <!-- Tutoriels -->
+                    <td id="tutoriels" colspan="2">
+                        <h2>Tutoriels</h2>
+                        <div class="texte">
+                            <p>
+                                
+                            </p>
+                        </div>
+                    </td>
+                </tr>
+
+                <tr>
+                    <!-- Un problème ? Besoin d'aide ? -->
+                    <td id="aide">
+                        <h2>Un problème ? Besoin d'aide ?</h2>
+                        <div class="texte">
+                            <p>
+                                Si vous avez un problème ou que vous avez besoin d'aide,</br>
+                                ne vous inquitez pas notre équipe est la pour vous !</br>
+                                Ecrivez nous simplement un message</br>
+                                et un conseiller vous répondra dès que possible par mail.</br>
+                            </p>
+
+                            <h3>Quel est votre Email ?</h3>
+                            <input class="textbox" type="text">
+
+                            <h3>Quel est votre Message ?</h3>
+                            <textarea class="textbox" type="text" id="test"></textarea>
+					        <figcaption><button class="envoyer">ENVOYER</button></figcaption>
+                        </div>
+                    </td>
+
+                    <!-- Contact/Crédits -->
+                    <td id="contact">
+                        <h2>Contact/Crédits</h2>
+                        <div class="texte">
+                            <p>
+                                Ce site à était fait par TORO Nicolas en 1G03.</br>
+                                Vous pouvez retrouver le code <a href="">ici</a> !</br>
+                                </br>
+                                Merci d'avoir prit la peine de lire mon site sur le CSharp</br>
+                                et j'espère qu'ils vous aura plus !</br>
+                                </br>
+                                Vous pouvez me retrouver sur mes différents réseaux :
+                            </p>
+                            <div class="réseaux">
+                                <a href="https://www.youtube.com/c/nt-games-ytb" target="_blank" rel="noopener noreferrer"><img src="img/youtube.png" alt="Youtube"></img></a>
+                                <a href="https://twitter.com/toronicolas1" target="_blank" rel="noopener noreferrer"><img src="img/twitter.png" alt="Twitter"></img></a>
+                                <a href="https://www.instagram.com/nicolas__tr/" target="_blank" rel="noopener noreferrer"><img src="img/instagram.png" alt="Instagram"></img></a>
+                                <a href="https://github.com/nt-games-ytb" target="_blank" rel="noopener noreferrer"><img src="img/github.png" alt="Github"></img></a>
+                                <a href="https://discord.com/invite/nk22HmUDJC" target="_blank" rel="noopener noreferrer"><img src="img/discord.png" alt="Discord"></img></a>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+        <!-- Footer : -->
+        <footer>
+
+        </footer>
+
+        <!-- Premier test couleur :
+        <h1 style="color: mediumslateblue;"> 1 - Test</h1>
+        <h2 style="color: seagreen;"> Test</h2>
+
+        <h1 style="color: #2e8b57;"> 2 - Test</h1>
+        <h2 style="color: #7b68ee;"> Test</h2> -->
+
+        <script  src="index.js"></script>
+    </body>
+</html>

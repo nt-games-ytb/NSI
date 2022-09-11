@@ -1,0 +1,71 @@
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <base href="file:bilder">
+    <style type="text/css">
+	  body { font-family:Helvetica,Arial,sans-serif; margin-left: 4px; margin-right: 4px;	margin-bottom: 20px; }
+      ol { margin-left: 15px;	}
+      ul { margin-left: 15px;	}
+      h2 {margin-bottom: 0px; margin-top: 20px}
+    </style>
+  </head>
+  <body>
+	<h1>Mode conception</h1>
+
+      <p>Ce mode permet d’assembler les différents constituants d’un réseau informatique.</p>
+
+	<h2>Construction du réseau </h2>
+    <p> À l’aide d’un glisser-lâcher à la souris, sélectionner des composants
+        dans la marge de gauche et les disposer sur l’espace de travail.
+	 	    <center><img src="hilfe/gfx/draganddrop.gif"></center>	</p>
+	  <p> Utiliser le menu contextuel d’un composant (clic droit) pour le supprimer.
+    <p> Raccorder les composants à l’aide de cables. Pour cela, sélectionner l’outil
+        cable en cliquant sur l’icône cable dans la marge de gauche (ou à l’aide du
+        raccourci clavier ALT+1), puis cliquer successivement sur deux composants à raccorder.
+		    <center><img src="hilfe/gfx/verkabeln.png"></center> </p>
+    <p> Utiliser le menu contextuel d’un composant pour supprimer toutes ses connexions. </p>
+    <p> Utiliser le menu contextuel d’un cable pour le supprimer. </p>
+
+	<h2>Paramétrer les composants du réseau </h2>
+    <p> Double-cliquer sur le composant à paramétrer. Un ensemble de paramètres apparait
+        dans la partie inférieure de la fenêtre qui s’ouvre pour cela. Pour paramétrer
+        un autre composant, il suffit de cliquer dessus (clic simple).
+        Les noms des composants peuvent être choisis arbitrairement : ils n’ont aucune
+        répercussion sur le fonctionnement de la simulation. </p>
+
+    <p> <b>Ordinateur/portable</b>: L’adressage IP peut être spécifié manuellement ou
+        de façon automatique à l’aide d’un serveur DHCP. Pour utiliser cette seconde
+        option, l’un des postes (ordinateur ou portable) devra avoir été configuré au
+        préalable comme serveur DHCP (en activant son service DHCP). </p>
+
+    <p> <b>Switch</b>: Un switch, ou commutateur, permet d’interconnecter plusieurs
+        composants entre eux au sein d’un réseau local. Ce composant ne nécessite pas
+        de configuration. </p>
+
+    <p> <b>Routeur</b>: Un routeur dispose d’au moins deux interfaces réseau. Chaque
+        interface doit être configurée manuellement.
+
+        Il faut également paramétrer le routage, soit en activant le mode automatique,
+        soit en définissant des règles manuellement.
+
+        Enfin, un parefeu peut être optionnellement paramétré et activé.
+        En mode simulation, le parefeu peut également être configuré
+        via une interface web. </p>
+
+    <p> <b>Modem</b>: Le modem permet d’interconnecter des réseaux virtuels créés dans
+        FILIUS sur des ordinateurs réels distincts. Pour cela, il faut configurer
+        l’un des modems en mode d’attente des connexions entrantes, et sur les autres,
+        il faut spécifier l’adresse IP (réelle) du poste du modem en attente. </p>
+
+  <h2>Changer de mode </h2>
+
+    <p> Pour passer au mode simulation, cliquer sur le bouton de la barre supérieure :
+        <center><img src="hilfe/gfx/aktionsmodus.png"></center> </p>
+	  
+	<p> Change au mode documentation pour ajouter des éléments visuels qui facilitent 
+	    la lecture du réseau virtuel :
+	    <center><img src="hilfe/gfx/dokumodus.png"></center></p>
+	  
+
+  </body>
+</html>

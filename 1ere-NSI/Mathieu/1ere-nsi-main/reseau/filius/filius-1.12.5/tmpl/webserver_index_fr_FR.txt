@@ -1,0 +1,19 @@
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Page d’accueil</title>
+  </head>
+  <body bgcolor="#ccddff" style="font-family:Verdana; text-align:center;">
+    <h2> FILIUS - Serveur web </h2>
+
+    <p>Bienvenue sur le serveur web de FILIUS</p>
+
+    <p> Cette page a été créée automatiquement à l’installation du serveur web.
+        Vous pouvez modifier cette page et en ajouter d’autres dans le dossier
+        /webserver du serveur.</p>
+
+    <p align="center"> <img src="splashscreen-mini.png"> </p>
+
+    <p> https://www.lernsoftware-filius.de </p>
+  </body>
+</html>

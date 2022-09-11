@@ -1,0 +1,9 @@
+<html>
+  <head>
+    <title>Error :meldung: (:code:)</title>
+  </head>
+  <body>
+    <h1>:meldung:</h1>
+    <p> An error occurred (HTTP-Status: :code:) </p>
+  </body>
+</html>

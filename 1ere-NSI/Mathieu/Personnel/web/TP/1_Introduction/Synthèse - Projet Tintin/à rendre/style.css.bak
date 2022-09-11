@@ -1,0 +1,10 @@
+h2
+{
+	text-decoration: underline;
+	text-align: center;
+	color: red;
+}
+img
+{
+	text-align: center;
+}

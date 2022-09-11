@@ -1,0 +1,194 @@
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Configuration du parefeu du routeur</title>
+    <style type="text/css">
+	  body { font-family:Helvetica,Arial,sans-serif; margin:0; margin-bottom:10px; }
+    form {padding:0;}
+    #mainTable {width:350px; margin-left:auto; margin-right:auto; border:0; border-collapse:collapse;  }
+    .blockTable {background-color:#E0E0E0; border:0; width:100%; }
+    .blockTable td {padding:5px;}
+    #rulesTable { font-size:12pt; border: 1px solid black; width: 100%; border-collapse:collapse;}
+    </style>
+  </head>
+
+  <body>
+:errorMsg:
+    <form action=":action_pfad:" method="POST">
+    <table id="mainTable" border="0" >
+      <tr><td> <h2>Configuration du parefeu du routeur</h2> </td></tr>
+      <tr><td>
+      <table class="blockTable">
+        <tr><td align="center">
+          <table border="0" cellpadding="5">
+            <tr>
+              <td width="10%">
+:firewallActivate:
+              </td>
+              <td width="90%">Activer le parefeu</td>
+            </tr>
+            <tr>
+              <td colspan="2">
+                Les règles ne sont appliquées que lorsque le parefeu est actif.
+              </td>
+            </tr>
+	    <tr>
+              <td>
+:dropICMP:
+              </td>
+              <td>Filtrer les paquets ICMP</td>
+            </tr>
+            <tr>
+              <td colspan="2">
+                Tous les paquets ICMP seront rejetés (ceux d’un ping, par exemple).
+              </td>
+            </tr>
+            <tr>
+              <td>
+:onlySYN:
+              </td>
+	      <td>
+	        Ne filtrer que les paquets SYN
+	      </td>
+	    </tr>
+	    <tr>
+              <td colspan="2">
+                Les requêtes vers les ports bloqués seront rejetées.
+                Le canal de retour pour les requêtes de connexion autorisées sera ouvert.
+	            </td>
+            </tr>
+          </table>
+      </tr>
+        <tr>
+          <td><input type="submit" name="btnSave" value="Enregistrer"></td>
+        </tr>
+      </table>
+
+    </td></tr><tr><td>
+
+
+    <!-- Konfiguration der Regeln -->
+      <table class="blockTable">
+        <tr>
+          <td>
+            <h3>Règles du parefeu</h3><br>
+            Les règles sont parcourues du haut de la liste vers le bas.<br>
+            Seule la première règle satisfaite rencontrée est appliquée.
+            La règle par défaut s’applique lorsqu’aucune règle de la liste n’est satisfaite.
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Règle par défaut :<br>
+            <select name="defaultPolicy" size="1">
+              <option value="drop"
+:defPolDropSelected:          
+              >rejeter</option>
+              <option value="accept"
+:defPolAcceptSelected:        
+              >accepter</option>
+            </select>
+            <input type="submit" name="defPolSet" value="Enregistrer">
+          </td>
+        </tr>
+        <tr>
+          <td>
+          <font size="-2">
+            <table id="rulesTable">
+              <tr>
+                <th>ID</th>
+                <th>IP source</th>
+                <th>Masque</th>
+                <th>IP dest.</th>
+                <th>Masque</th>
+                <th>Protocole</th>
+                <th>Port</th>
+                <th>Action</th>
+              </tr>
+
+:ruleset:
+
+            </table>
+          </font>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Actions applicables à la règle sélectionnée :
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <input type="submit" name="moveup" value="Remonter">
+            <input type="submit" name="movedown" value="Descendre">
+            <input type="submit" name="delrule" value="Supprimer">
+          </td>
+        </tr>
+      </table>
+
+    </td></tr><tr><td>
+
+:errorMsg:
+    <!-- Konfiguration neuer Regeln -->
+      <table class="blockTable">
+        <tr>
+          <td colspan="2">
+            <h3>Nouvelle règle</h3>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2">
+            Tous les champs sont optionnels, sauf protocole et Action.
+          </td>
+        </tr>
+        <tr>
+          <td width="30%">IP source : </td>
+          <td width="70%"><input name="srcIP" type="text" size="15" maxlength="15" value=":srcIP:"></td>
+        </tr>
+        <tr>
+          <td>Masque : </td>
+          <td><input name="srcMask" type="text" size="15" maxlength="15" value=":srcMask:"></td>
+        </tr>
+        <tr>
+          <td>IP destination : </td>
+          <td> <input name="destIP" type="text" size="15" maxlength="15" value=":destIP:"></td>
+        </tr>
+        <tr>
+          <td>Masque : </td>
+          <td> <input name="destMask" type="text" size="15" maxlength="15" value=":destMask:"></td>
+        </tr>
+        <tr>
+          <td>Protocole : </td>
+          <td>
+            <select name="protocol" size="1">
+              <option value="*" :optionProtAll:>*</option>
+              <option value="TCP" :optionProtTCP:>TCP</option>
+              <option value="UDP" :optionProtUDP:>UDP</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td>Port : </td>
+          <td> <input name="port" type="text" size="5" maxlength="5" value=":port:"></td>
+        </tr>
+        <tr>
+          <td>Action : </td>
+          <td>
+            <select name="action" size="1">
+              <option value="drop" :optionActionDrop:>rejeter</option>
+              <option value="accept" :optionActionAccept>accepter</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2">
+            <input type="submit" name="addrule" value="Ajouter la règle">
+          </td>
+        </tr>
+      </table>
+    </td></tr>
+    <tr><td> <p><a href="/">Retour au menu principal</a></p> </td></tr>
+    </table>
+    </form>
+  </body>
+</html>

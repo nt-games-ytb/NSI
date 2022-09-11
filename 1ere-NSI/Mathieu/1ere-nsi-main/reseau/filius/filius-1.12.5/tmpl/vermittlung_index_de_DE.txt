@@ -1,0 +1,14 @@
+<html>
+  <head>
+    <title>Administration des Vermittlungsrechners</title>
+  </head>
+  <body>
+
+    <h1>Firewall-Administration</h1>
+    <p> <a href="konfig">Konfiguration</a> </p>
+    <p> <a href="log">Log-Eintr&auml;ge anzeigen</a> </p>
+
+    <h1> Weiterleitung/Routing </h1>
+    <p> <a href="routes"> Anzeige des aktuellen Status der Weiterleitungs-/Routing-Tabelle </a></p>
+  </body>
+</html>

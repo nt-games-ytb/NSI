@@ -1,0 +1,17 @@
+<html>
+  <head>
+    <title>Standardseite</title>
+  </head>
+  <body bgcolor="#ccddff" style="font-family:Verdana; text-align:center;">
+    <h2> FILIUS - Webserver </h2>
+
+    <p>Welcome at FILIUS!</p>
+
+    <p> This page has been delivered as default page.
+    Feel free to add your own contents! </p>
+
+    <p align="center"> <img src="splashscreen-mini.png"> </p>
+
+    <p> https://www.lernsoftware-filius.de </p>
+  </body>
+</html>

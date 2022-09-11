@@ -1,0 +1,128 @@
+<!-- Exercice de synthèse du TP1 de Web par TORO Nicolas 1G03 -->
+
+<!DOCTYPE html>
+<html lang="fr">
+	<!-- En-tête de la page -->
+	<head>
+		<meta charset="utf-16" />
+		<link rel="stylesheet" href="style.css">
+		<title> TINTIN-WEB : Les aventures de Tintin - Le secret de la licorne (Le site officiel) </title>
+	</head>
+	
+	<!-- Visuel de la page -->
+	<body>
+		<audio src="musique tintin.mp3" loop autoplay controls hidden></audio>
+		<table border="0" class="Center">
+			<tr>
+				<td colspan="2">
+					<h3 id="start">Tout les nouveautées sur Tintin exclussivement sur votre blmg préféré : TINTIN-WEB.com</h3>
+					<img class="Center" src="tintin.png">
+					<h1>Nouvelle article sur Tintin !<h1>
+				</td>
+			</tr>
+			<tr>
+				<td colspan="2">
+					<img class="Center" src="tintin-mainCast.png">
+					<h3>Retourvez Tintin et tous ses amis dans le nouveau film Steven Spielberg :<h3>
+					<h2>Les Aventures de Tintin : Le Secret de La Licorne<h2>
+				</td>
+			</tr>
+			<tr>
+				<td rowspan="4"> <!-- essayer de recarder le text avec l'iframe -->
+					<h2 text-align="center" id="quoi">C'EST QUOI TINTIN ?</h2>
+					<a>Les Aventures de Tintin constituent une série de bandes dessinées créée par le dessinateur et</a>
+					<a>scénariste belge Hergé. Avec 250 millions d'exemplaires vendus,</a>
+					<a>Les Aventures de Tintin font partie des bandes dessinées européennes les plus célèbres et plus</a>
+					<a>populaires du xxe siècle. Elles ont été traduites dans une centaine de langues et dialectes</a>
+					<a>et adaptées à de nombreuses reprises au cinéma, à la télévision et au théâtre.</a>
+					<a>Elles se déroulent dans un univers réaliste et parfois fantastique,</a>
+					<a>fourmillant de personnages aux traits de caractère bien définis.</a>
+					<a>Le héros de la série est le personnage éponyme, Tintin, un jeune reporter et globe-trotter belge ;</a>
+					<a>il est accompagné dans ses aventures par son fox-terrier Milou.</a>
+					<a>Au fil des albums, plusieurs figures récurrentes apparaissent,</a>
+					<a>comme les détectives accumulant les maladresses loufoques Dupond et Dupont,</a>
+					<a>le capitaine Haddock qui ne tarde pas à devenir un personnage principal, ou encore le professeur Tournesol.</a>
+					<a></a>
+					<a>Source : Wikipédia</a>
+					
+					<h2 text-align="center" id="trailer">TRAILER :</h2>
+					<iframe frameborder="0" height="480" scrolling="no" src="tintin.mp4" width="640" autostart="false" autoplay="false"></iframe>
+					<!--<iframe src="tintin.mp4" type="video/mp4" width="480" height="640" scrolling="no" border-color="black"  frameBorder="0"></iframe>-->
+					<!--<video controls>
+					  <source src="tintin.mp4" type="video/mp4"  width="10" height="1080">
+					  <p>Votre navigateur ne prend pas en charge les vidéos HTML5.</p>
+					</video>-->
+					<!--<video src="https://www.youtube.com/watch?v=79TAYeADle8">
+					<iframe width="420" height="315" src="https://www.youtube.com/embed/watch?v=79TAYeADle8"> </iframe>-->
+					
+					<h2 text-align="center">DISPOSITION :</h2>
+					<a href="#start">Début de la page</a><a> | </a>
+					<a href="#quoi">C'est quoi tintin ?</a><a> | </a>
+					<a href="#desc">Description</a><a> | </a>
+					<a href="#trailer">Où regarder</a><a> | </a>
+					<a href="#trailer">Trailer</a><a> | </a>
+					<a href="#comment">Commentaire</a><a> | </a>
+					<a href="#credits">Crédits</a>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<h2 text-align="center" id="desc">DESCRIPTION :</h2>
+					<a>Parce qu’il achète la maquette d’un bateau appelé la Licorne,</a>
+					<a>Tintin, un jeune reporter, se retrouve entraîné dans une fantastique</a>
+					<a>aventure à la recherche d’un fabuleux secret.</a>
+					<a>En enquêtant sur une énigme vieille de plusieurs siècles,</a>
+					<a>il contrarie les plans d’Ivan</a>
+					<a>Ivanovitch Sakharine, un homme diabolique convaincu que</a>
+					<a>Tintin a volé un trésor en rapport avec un pirate nommé Rackham le Rouge.</a>
+					<a>Avec l’aide de Milou, son fidèle petit chien blanc, du capitaine Haddock,</a>
+					<a>un vieux loup de mer au mauvais caractère, et de deux</a>
+					<a>policiers maladroits, Dupond et Dupont, Tintin va parcourir la moitié de la planète,</a>
+					<a>et essayer de se montrer plus malin et plus rapide que ses ennemis,</a>
+					<a>tous lancés dans cette course au trésor à la recherche d’une épave engloutie</a>
+					<a>qui semble receler la clé d’une immense fortune… et une redoutable malédiction.</a>
+					<a>De la haute mer aux sables des déserts d’Afrique, Tintin et ses amis vont affronter mille obstacles,</a>
+					<a>risquer leur vie, et prouver que quand on est prêt à prendre tous les risques, rien ne peut vous arrêter…</a>
+					
+					<h2 text-align="center" id="regarder">OU REGARDER :</h2>
+					<p>Youtube : <a href="http://www.youtube.com/watch?v=UrqYEbYlLk8">Link</a></p>
+					<p>Netflix : <a href="https://www.netflix.com/watch/70121502?source=35">Link</a></p>
+					<p>Amazon Prime Video : <a href="https://www.primevideo.com/dp/amzn1.dv.gti.92b58a37-8b50-9cb6-e67f-8408e3a0b0dd?autoplay=1&ref_=atv_cf_strg_wb">Link</a></p>
+					<p>Google Play Film et TV : <a href="https://play.google.com/store/movies/details?id=UrqYEbYlLk8">Link</a></p>
+					<p>Canal VOD : <a href="https://vod.canalplus.com/cinema/les-aventures-de-tintin-le-secret-de-la-licorne/h/701733_40099?autoplay=true&sc_openpartner=googlewatch">Link</a></p>
+					<p>Apple TV : <a href="https://tv.apple.com/fr/movie/the-adventures-of-tintin-the-secret-of-the-unicorn/umc.cmc.16ygupjgy6v6f70dv1vq03b8n?action=play">Link</a></p>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<h2 text-align="center" id="comment">COMMENTAIRE :</h2>
+					<img class="Center" src="tintin et milou.png" height="271px" width="256px">
+					<br>Ecrire un commentaire :</br>
+					<input type="text">
+					<button>ENVOYER</button>
+					<div title="This is my tooltip">
+					<!-- Pas encore dispo -->
+				</td>
+			</tr>
+			<tr>
+				<td class="tintinBack">
+					<!--<img class="Center" src="tintin gif.gif" height="271px" width="256px">-->
+					<h2 text-align="center" id="credits">CREDITS :</h2>
+					<br></br>
+					<br text-align="center">Site : TORO Nicolas</br>
+					<br text-align="center">Source : ALLOCINE.COM</br>
+					<br></br>
+					<br></br>
+					<h2 text-align="center">Merci d'avoir lu notre article !</h2>
+				</td>
+			</tr>
+		</table>
+	</body>
+	
+	<!-- à faire :
+	- à gauche vidéo
+	- à droite texte
+	- en bas image
+	et à voir 
+	-->
+</html>

@@ -1,0 +1,20 @@
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Administration du routeur</title>
+    <style type="text/css">
+	  body { font-family:Helvetica,Arial,sans-serif; margin-left:4px; }
+      h1 { margin-top:20px; margin-bottom:0;	}
+      p { margin-left:10px;	}
+    </style>
+  </head>
+  <body>
+    <h1>Parefeu</h1>
+    <p> <a href="konfig">Configurer le parefeu</a> </p>
+    <p> <a href="log">Afficher le journal</a> </p>
+
+    <h1>Routage</h1>
+    <p> <a href="routes">Afficher la table de routage</a> </p>
+    
+  </body>
+</html>

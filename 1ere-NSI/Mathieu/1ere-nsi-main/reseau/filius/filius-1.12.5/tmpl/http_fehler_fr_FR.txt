@@ -1,0 +1,10 @@
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Erreur :meldung: (:code:)</title>
+  </head>
+  <body>
+    <h1>:meldung:</h1>
+    <p> Une erreur s’est produite (HTTP-Status: :code:) </p>
+  </body>
+</html>
