@@ -1,7 +1,7 @@
-#Chapitre 2 - Exercice 2
+#Chapitre 2
 
 #region Functions
-#Question 2 
+#Exercice 2 
 def diviseur(nombre):
     resultat = []
     try:
@@ -19,7 +19,7 @@ def diviseur(nombre):
     
 
 
-#Question 6
+#Exercice 6
 def PGCD(nombre1, nombre2):#Plus grand commun diviseur
     '''
     DESCRIPTION : Une fonction qui renvoie le plus grand diviseur commun de deux nombres entiers
@@ -46,8 +46,8 @@ def PGCD(nombre1, nombre2):#Plus grand commun diviseur
     
 
 
-#Question 7    
-def  decompoFacteursPremiers(nombre):
+#Exercice 7    
+def  decompoFacteursPremiers(nombre):#Nicolas
     '''
     DESCRIPTION : Une fonction qui renvoie la liste des nombres premiers (comporte deux diviseurs) d'un nombre
     '''
@@ -66,6 +66,23 @@ def  decompoFacteursPremiers(nombre):
     return resultat #Renvoie le resultat (la liste des nombres premiers dans le nombre)
     #print(resultat) #Affiche le resultat (la liste des nombres premiers dans le nombre)
         
+        
+        
+def decompo_Facteurs_Premiers(n):#Prof
+    '''
+    DESCRIPTION : Cette fonction prend un integer => et renvoie la liste des facteurs premiers.
+    '''
+    assert type(n)==int
+    assert n>=1
+    liste = []
+    diviseur = 2
+    while n>1:
+        if n%diviseur==0:
+            liste.append(diviseur)
+            n = n//diviseur
+        else:
+            diviseur += 1
+    return liste
 #endregion
 
 #region Execute
@@ -77,4 +94,7 @@ PGCD(84,36)
 
 print("\r\nFonction 3 :")
 decompoFacteursPremiers(30)
+
+print("\r\nFonction 4 :")
+decompo_Facteurs_Premiers(30)
 #endregion
