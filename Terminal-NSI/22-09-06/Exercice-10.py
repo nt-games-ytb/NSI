@@ -9,7 +9,7 @@ def extraire2(un_texte):
     resultat = [None] * len(un_texte)
     for i in range(len(un_texte)):
         resultat[i] = un_texte[i]
-    print(resultat)#return resultat
+    return resultat
 
 #Question 3
 def occurence(une_liste):
@@ -67,7 +67,7 @@ def profOccurence():
             liste_carac_unique[indice] = caractere
             indice += 1
             nb_carac_unique += 1
-    liste_finale = {None * ([nb_carac_unique*2])
+    liste_finale = [None] * (nb_carac_unique*2)
     
     indice = 0
     
@@ -95,10 +95,10 @@ def occurenceTri(une_liste):
 
 #region Execute
 print("Fonction 1 :")
-extraire2("Bonjour je suis nico")
+print(extraire2("Bonjour je suis nico"))
 
 print("\r\nFonction 2 :")
-occurence2(["e","c","b","e"])
+occurence2(extraire2("Bonjour je suis nico"))#["e","c","b","e"])
 
 print("\r\nFonction 3 :")
 occurenceTri(["e",1,"b",0])
