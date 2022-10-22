@@ -134,6 +134,7 @@ def rechercheValeur(arbreBinaire, valeur):
 #print(rechercheValeur(arbre_de_recherche, 69))
         
         
+        
 #Exerice 5
 def ajoutValeur(arbreBinaire, valeur):
     #region Pas obligatoire
@@ -146,14 +147,64 @@ def ajoutValeur(arbreBinaire, valeur):
         if valeur < arbreBinaire.valeur:
             if arbreBinaire.gauche == None:
                 arbreBinaire.gauche = ArbreBinaire(valeur)
-                return lectureprefixe(arbre_de_recherche)
+                #return lectureprefixe(arbre_de_recherche)#du coup non
             else:
                 ajoutValeur(arbreBinaire.gauche, valeur)
         elif valeur > arbreBinaire.valeur:
             if arbreBinaire.droit == None:
                 arbreBinaire.droit = ArbreBinaire(valeur)
-                return lectureprefixe(arbre_de_recherche)
+                #return lectureprefixe(arbre_de_recherche)
             else:
                 ajoutValeur(arbreBinaire.droit, valeur)
-print(ajoutValeur(arbre_de_recherche, 80))
-print(rechercheValeur(arbre_de_recherche, 28))
+#print(ajoutValeur(arbre_de_recherche, 80))
+#print(rechercheValeur(arbre_de_recherche, 28))
+
+
+
+#Exerice 6
+def creaabrederecherche(une_liste):
+    arbre_binaire = ArbreBinaire(une_liste[0])
+    une_liste.pop(0)
+    while une_liste != []:
+        valeur_supprimé = une_liste.pop(0)
+        #print(une_liste)
+        ajoutValeur(arbre_binaire, valeur_supprimé)
+    return arbre_binaire
+#print(lectureprefixe(creaabrederecherche([65,40,30,57,25,32,43,58,70,68,103,63,69,102])))
+
+
+
+#Exerice 8
+def creaabrederecherche_optimise(une_liste):
+    une_liste.sort()
+    arbre_binaire = ArbreBinaire(une_liste[len(une_liste) // 2])
+    une_liste.pop(len(une_liste) // 2)
+    FILE = File() 
+    for element in une_liste:
+        valeur_supprimé = une_liste.pop(len(une_liste) // 2)
+        FILE.pousse(valeur_supprimé)
+    while FILE.tablo != []:
+        valeur_supprimé = FILE.extraire
+        ajoutValeur(arbre_binaire, valeur_supprimé)
+    return arbre_binaire
+    #return creaabrederecherche(une_liste)
+print("Exerice 8:")
+print(lectureprefixe(creaabrederecherche_optimise([65,40,30,57,25,32,43,58,70,68,103,63,69,102])))
+
+def crea_abre_de_recherche_opti_prof(liste):
+    liste.sort() #Trie la liste
+    milieu = len(liste) // 2 #Milieu est l'indice de la médiane
+    arbre_sortie = ArbreBinaire(liste[milieu]) #Crée un ArbreBinaire dont la racine est l'élément du milieu
+    file = File() #On crée une file vide
+    file.push(liste[:milieu]) #On met dans la file, la sous liste à gauche de la médiane (dont le sous arbre gauche)
+    file.push(liste[milieu-1:]) #On met dans la file, la sous liste à droite de la médiane (dont le sous arbre droit)
+    while file.non_vide():
+        a = file.pop()
+        if a == []:
+            pass
+        if len(a) == 1:
+            ajoutValeur(arbre_sortie, a[0])
+        elif len(a) == 2:
+            ajoutValeur(arbre_sortie, a[0])
+            ajoutValeur(arbre_sortie, a[1])
+        else:
