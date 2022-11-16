@@ -25,12 +25,11 @@ Table de routage du routeur F :
 | Destination | Routeur suivant | Distance |
 |:---:|:---:|:---:|
 | B | B | 1 |
---| C | C | 1 |--
 | D | D | 1 |
 | E | D | 2 |
 | F | D | 4 |
 | G | D | 3 |
-
+~~| C | C | 1 |~~
 
 
 ## Exercice 11
@@ -48,7 +47,8 @@ On retrouve 4 chemins possible :
 - A B D E G     
 - A D E G    
 - A C E G    
-- A C F G    
+- A C F G     
+
 On sait que plus le débit est grand et plus le coût est petit.    
 Nous pouvons retirer A C E G car la liaison C et E à un débit plus petit que la liaison C et F.    
 Nous pouvons retirer A B D E G car comparer à A D E G il fera un saut en plus.    
