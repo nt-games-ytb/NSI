@@ -58,7 +58,7 @@ def occurence2(une_liste):
     print(resultat) #return resultat
     #endregion
     
-def profOccurence():
+def profOccurence(une_liste):
     nb_carac_unique = 0
     liste_carac_unique = [None] * len(une_liste)
     indice = 0
