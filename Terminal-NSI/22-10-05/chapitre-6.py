@@ -207,4 +207,5 @@ def crea_abre_de_recherche_opti_prof(liste):
         elif len(a) == 2:
             ajoutValeur(arbre_sortie, a[0])
             ajoutValeur(arbre_sortie, a[1])
-        else:
+        #else:
+        #J'ai pas eu le temps de marquer la suite...

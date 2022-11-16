@@ -12,7 +12,7 @@ On sait que P3 arrive à 0, P2 arrive à 2 et P1 arrive à 3.
 Alors :       
 ```
 |P3 |P3 |P2 |P1 |P1 |P1 |P2 |P2 |P3 |P3 |    
-0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10
+0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10    
 ```    
 
 

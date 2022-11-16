@@ -1,11 +1,16 @@
 #Chapitre 5
 import ast
 
+
+
 #Exercie 15
 arbre = ["Toto",
 ["Tantan", ["Titi", None, None], ["Tutu", None, None]],
 ["Tintin", ["Furfur", None, None], ["Teïteï", ["Tojtoj", None, None], ["Têtê", None, None]]]
 ]
+
+
+
 
 #Exercice 16
 #Question 1

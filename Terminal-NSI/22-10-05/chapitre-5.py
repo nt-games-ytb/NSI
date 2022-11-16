@@ -15,6 +15,8 @@ class ArbreBinaire:
         
     def supprdroit(self):
         self.droiy = None
+
+     
         
 #Exerice 26
 class File:
@@ -57,6 +59,8 @@ def taille(arbreBinaire):
         return 0
     else:
         return 1 + taille(arbreBinaire.gauche) + taille(arbreBinaire.droit)
+
+
 
 #Exerice 32
 liste_des_valeurs = []

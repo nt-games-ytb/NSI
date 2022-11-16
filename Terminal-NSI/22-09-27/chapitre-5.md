@@ -28,6 +28,7 @@ Voir cahier de NSI
 
 ## Exercice 13
 | Noeud | Valeur | Enfant gauche | Enfant droit |
+|:---:|:---:|:---:|:---:|
 | 1 | Toto | 2 | 5 |
 | 2 | Tantan | 3 | 4 |
 | 3 | Titi | 0 | 0 |
@@ -43,47 +44,47 @@ Voir cahier de NSI
 ## Exercice 18
 
 ### Question 1
-Toto
-Tantan
-Titi
-Tutu
-Tintin
-Furfur
-Teïteï
-Tojtoj
-Têtê
+Toto    
+Tantan    
+Titi    
+Tutu    
+Tintin    
+Furfur    
+Teïteï    
+Tojtoj    
+Têtê    
 
 ### Question 2
-Titi
-Tantan
-Tutu
-Toto
-Furfur
-Tintin
-Tojtoj
-Teïteï
-Têtê
+Titi    
+Tantan    
+Tutu    
+Toto    
+Furfur    
+Tintin    
+Tojtoj    
+Teïteï    
+Têtê    
 
 ## Question 3
-Titi
-Tutu
-Tantan
-Furfur
-Tojtoj
-Têtê
-Teïteï
-Tintin
-Toto
+Titi    
+Tutu    
+Tantan    
+Furfur    
+Tojtoj    
+Têtê    
+Teïteï    
+Tintin    
+Toto    
 
 
 
 ## Exerice 24
-Toto
-Tantan
-Tintin
-Titi
-Tutu
-Furfur
-Teïteï
-Tojtoj
-Têtê
+Toto    
+Tantan    
+Tintin    
+Titi    
+Tutu    
+Furfur    
+Teïteï    
+Tojtoj    
+Têtê    

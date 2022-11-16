@@ -30,28 +30,28 @@ Le grand-parent de "Tojtoj" est "Tintin".
 ## Exercice 6
 
 ### Question 1
-Fonction recherche prennant comme paramètre élément et arbre:
-    définir l'arbre provisoire qui vaut l'abre
-    tant que tout les noeuds non pas était vu:
-	pour noeuds dans l'arbre provisoire:	#au début sa sera la racine
-	    si le noeuds est égale à l'élément alors:
-	        renvoie "Oui"
-        prendre le noeuds suivant
-    renvoie "Non"
+Fonction recherche prennant comme paramètre élément et arbre:    
+    définir l'arbre provisoire qui vaut l'abre    
+    tant que tout les noeuds non pas était vu:    
+	pour noeuds dans l'arbre provisoire:	#au début sa sera la racine    
+	    si le noeuds est égale à l'élément alors:    
+	        renvoie "Oui"    
+        prendre le noeuds suivant    
+    renvoie "Non"    
 
 #### Correction :
-fonction recherche(arbre, objet à demander)
-    si objet à chercher est dans racine:
-        retourner vrai
-    si arbre est une feuille:
-        passe
-    sinon:
-	on lance la fonction recherche pour tout les enfants 
+fonction recherche(arbre, objet à demander)    
+    si objet à chercher est dans racine:    
+        retourner vrai    
+    si arbre est une feuille:    
+        passe    
+    sinon:    
+	on lance la fonction recherche pour tout les enfants     
 
 ### Question 2
 #### Correction :
-Fonction taille(arbre):
-    si arbre est une famille:
-        renvoie
-    sinon 
-	je renvoie 1 + la somme des tailles des ...
+Fonction taille(arbre):    
+    si arbre est une famille:    
+        renvoie    
+    sinon    
+	je renvoie 1 + la somme des tailles des ...    

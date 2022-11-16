@@ -18,18 +18,28 @@ def factITERA(n):
 #Exerice 3
 
 #Question 1
-def fiboRECUR(n):
-    if n == 1 or n == 2:
+def fiboRECURN(n):
+    if n == 0 or n == 1 or n == 2:
         return 1
     else:
-        return fiboRECUR(n - 1) + fiboRECUR(n - 2)
-        
+        return fiboRECURN(n - 1) + fiboRECURN(n - 2)
+       
+#Question 2
 def fiboITERA(n):
-    if n == 1 or n == 2:
+    if n == 0 or n == 1 or n == 2:
         return 1
     else:
-        terme_avant_avant = 2
+        terme_avant_avant = 1
         terme_avant = 1
+        terme = 2
+        for i in range(n - 3):
+            terme_avant_avant = terme_avant
+            terme_avant = terme
+            terme = terme_avant_avant + terme_avant
+    return terme
+
+
+
     
 #Exercice 4
 
@@ -42,7 +52,6 @@ def compteVoyelleRECUR(texte):
     if texte[0] == "a" or texte[0] == "e" or texte[0] == "i" or texte[0] == "o" or texte[0] == "u" or texte[0] == "y":
         comptage = comptage + 1
     return compteVoyelleRECUR(texte[1:])
-    
 #prof:
 #else:
 #    if texte[0] ... (ce que j'ai mis)
@@ -58,6 +67,8 @@ def compteVoyelleITERA(texte):
             resultat = resultat + 1
     return resultat
     
+
+
 #Exercice 5
 
 #Question 1
@@ -117,6 +128,3 @@ def lapinITERAprof(mois):
         ado = bebe 
         bebe = ancien_adulte
     return adulte + ado + bebe
-    
-    
-    

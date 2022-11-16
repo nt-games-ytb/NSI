@@ -62,7 +62,8 @@ def fusion_prof(liste1, liste2):
             indice1 += 1
     return resultat
 
-print(fusion([1,6,8], [2,3,7]))
+print("Fonction fusion :")
+print(str(fusion([1,6,8], [2,3,7])) + "\n")
 
 
 
@@ -140,4 +141,5 @@ def tri_fusion_prof_long(liste):
             indice1 += 1
     return resultat
     
+print("Fonction tri fusion :")
 print(tri_fusion_prof_long([6,4,7,3,8,2,1,9]))
