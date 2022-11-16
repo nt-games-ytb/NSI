@@ -1,0 +1,5 @@
+<?xml version="1.0" ?><sauvegarde>
+	
+
+	<joueur argent="0" argent_banque="42" dossier_du_jeu="D:\projet-1\release" experience="499" fichier_de_sauvegarde="\sauvegarde.xml" langage_debloque="1" niveau="4" objet_en_main="0" sac="[['print', 1]]" vie="130" vie_maximal="130" vitesse_du_texte="0.0">Nicolas</joueur>
+</sauvegarde>

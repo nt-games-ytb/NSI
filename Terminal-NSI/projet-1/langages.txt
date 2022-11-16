@@ -1,0 +1,39 @@
+https://fr.wikipedia.org/wiki/Chronologie_des_langages_de_programmation
+
+Normal : 30
+1954	FORTRAN	A-0	John Backus
+1960	COBOL	FLOW-MATIC, COMTRAN	Le comité CODASYL
+1964	BASIC	FORTRAN II, JOSS	John George Kemeny and Thomas Eugene Kurtz
+1971	Pascal	ALGOL60	Niklaus Wirth, Jensen
+1972	C	B, BCPL	Dennis Ritchie
+1974	SQL	SEQUEL
+1983	C++	C with Classes	Bjarne Stroustrup
+1983	Objective-C	Smalltalk-80	Brad Cox et Tom Love
+1984	MATLAB	FORTRAN, C	The MathWorks
+1985	Caml	ML	INRIA
+1987	Perl	Awk	Larry Wall
+1991	Python	C	Guido van Rossum
+1991	Visual Basic	QuickBASIC	Alan Cooper, Microsoft
+1992	SQL-2	SQL-1
+1993	Brainfuck	FALSE	Urban Müller
+1993	Ruby	Perl Smalltalk	
+1993	Lua	C++ (objet)
+1995	Delphi(1)	Borland Pascal	Borland
+1995	Java	C++	Sun Microsystems
+1995	PHP	C, Shell Unix	Rasmus Lerdorf
+1995	JavaScript	Scheme, Self	Brendan Eich
+1996	Objective Caml	Caml	INRIA
+2000	C#	C, C++, COM, Java	Microsoft
+2002	F#	OCaml, C♯, Haskell	Don Syme
+2009	Go	C, Pascal, Modula, Oberon, Newsqueak, Limbo 2	Ken Thompson, Rob Pike, Robert Griesemer
+2010	Rust	C, C++	Graydon Hoare, Mozilla
+2011	Kotlin		JetBrains
+2012	Julia	MATLAB, Python, R, Lisp	MIT
+2014	Swift	Objective-C	Apple
+2017	Q#	C#	Microsoft
+
+Bonus : 4
+vers 1840	Premier programme au monde	Ada Lovelace
+1936	Machine de Turing1	Alan Turing
+1945	Plankalkül	Konrad Zuse
+1951	A-0 System		Grace Hopper

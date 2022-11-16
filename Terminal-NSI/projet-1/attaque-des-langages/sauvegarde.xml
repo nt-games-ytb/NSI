@@ -1,0 +1,5 @@
+<?xml version="1.0" ?><sauvegarde>
+	
+
+	<joueur vie="110" vie_maximal="110" argent="0" argent_banque="0" experience="69" niveau="2" objet_en_main="0" sac="[['print', 1]]" langage_debloque="1" vitesse_du_texte="0.05" dossier_du_jeu="H:\projet-1\attaque-des-langages" fichier_de_sauvegarde="\sauvegarde.xml">nico</joueur>
+</sauvegarde>

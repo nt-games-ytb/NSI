@@ -1,0 +1,10 @@
+<?xml version="1.0" ?><sauvegarde>
+	
+	
+
+	
+	<joueur vie="120" vie_maximal="120" argent="0" argent_banque="0" experience="124" niveau="3" objet_en_main="1" sac="[['print', 1], ['def', 2]]" langage_debloque="1" vitesse_du_texte="0.0" dossier_du_jeu="H:\projet-1\attaque-des-langages" fichier_de_sauvegarde="\sauvegarde.xml">Nico</joueur>
+	
+
+	<joueur vie="100" vie_maximal="100" argent="0" argent_banque="0" experience="0" niveau="1" objet_en_main="0" sac="[['print', 1]]" langage_debloque="1" vitesse_du_texte="0.0" dossier_du_jeu="H:\projet-1\attaque-des-langages" fichier_de_sauvegarde="\sauvegarde.xml">nic</joueur>
+</sauvegarde>
