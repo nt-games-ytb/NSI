@@ -1,3 +1,23 @@
+#Exercice 2
+
+#Question 1
+def factRECURN(n):
+    if n == 0 or n == 1:
+        return 1
+    else:
+        return n*factRECURN(n - 1)
+    
+#Question 2
+def factITERA(n):
+    for i in range(1, n):
+        n = n * i
+    return n
+    
+
+
+#Exerice 3
+
+#Question 1
 def fiboRECUR(n):
     if n == 1 or n == 2:
         return 1
@@ -12,6 +32,7 @@ def fiboITERA(n):
         terme_avant = 1
     
 #Exercice 4
+
 #Question 1
 comptage = 0
 def compteVoyelleRECUR(texte):
@@ -38,6 +59,7 @@ def compteVoyelleITERA(texte):
     return resultat
     
 #Exercice 5
+
 #Question 1
 lapin_adulte = 2
 lapin_ado = 0

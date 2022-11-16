@@ -1,5 +1,7 @@
 # Chapitre 10
 
+
+
 ## Exercice 7
 Il y a 10 places, dont :
 - 3 P1

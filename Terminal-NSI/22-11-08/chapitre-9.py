@@ -64,6 +64,8 @@ def fusion_prof(liste1, liste2):
 
 print(fusion([1,6,8], [2,3,7]))
 
+
+
 #Exercice 5
 def tri_fusion(liste):
     #résultat = []
@@ -137,6 +139,5 @@ def tri_fusion_prof_long(liste):
             resultat.append(moitié_gauche_triée[indice1])
             indice1 += 1
     return resultat
-    return fusion(moitié_gauche_triée, moitié_droite_triée)
     
 print(tri_fusion_prof_long([6,4,7,3,8,2,1,9]))
