@@ -107,7 +107,7 @@ def tri_fusion_prof(liste):
 def tri_fusion_prof_short(liste):
     if len(liste) <= 1:#si liste vide ou un seul élément
         return liste
-    return fusion(tri_fusion_prof(liste[:len(liste)//2]), tri_fusion_prof(liste[len(liste)//2:]))
+    return fusion(tri_fusion_prof_short(liste[:len(liste)//2]), tri_fusion_prof_short(liste[len(liste)//2:]))
     
 def tri_fusion_prof_long(liste):
     if len(liste) <= 1:#si liste vide ou un seul élément
@@ -115,8 +115,8 @@ def tri_fusion_prof_long(liste):
     indice_milieu = len(liste)//2
     moitié_gauche = liste[:indice_milieu]
     moitié_droite = liste[indice_milieu:]
-    moitié_gauche_triée = tri_fusion_prof(moitié_gauche)
-    moitié_droite_triée = tri_fusion_prof(moitié_droite)
+    moitié_gauche_triée = tri_fusion_prof_long(moitié_gauche)
+    moitié_droite_triée = tri_fusion_prof_long(moitié_droite)
     if moitié_gauche_triée == []:
         return moitié_droite_triée
     if moitié_droite_triée == []:
