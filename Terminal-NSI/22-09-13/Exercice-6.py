@@ -6,10 +6,8 @@ class Pile:
     def __init__(self):
         self.tablo = []
 
-
     def push(self, data):
         self.tablo.append(data)
-
 
     def pop(self):
         return self.tablo.pop()
