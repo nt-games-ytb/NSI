@@ -30,14 +30,15 @@ print()
 ALPHABET = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'
 def position_alphabet(lettre):
     return ord(lettre) - ord('A')
+
 def cesar(message, decalage):
     resultat = ''
-    for ... in message:
-        if 'A' <= c and c <= 'Z':
-            indice = ( ... ) % 26
+    for c in message:
+        if 'A' <= c and c <= 'Z': #si le caractère est dans l'alphabet
+            indice = ((position_alphabet(c) + decalage)) % 26
             resultat = resultat + ALPHABET[indice]
-        else:
-            resultat = ...
+        else: #sinon on ajoute le caractère
+            resultat = resultat + c
     return resultat
 
 print("Exemple exercice 2 :")
