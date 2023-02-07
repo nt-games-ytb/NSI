@@ -25,7 +25,7 @@ C'est P3 qui acquérire R2 en premier or dans l'ordre des prioritées, P1 est lo
 Il y a donc un problème et un interblocage.    
 
 D'après le prof, c'est le scénario 2, voici les lignes importantes :    
-P1 acquirt R1    
+P1 acquiert R1    
 P3 acquiert R2    
 P1 attend R2    
 P3 attend R1    

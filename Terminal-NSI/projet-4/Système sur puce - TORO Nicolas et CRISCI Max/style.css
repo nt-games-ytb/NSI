@@ -1,0 +1,256 @@
+@charset "UTF-8";
+
+html {
+  scroll-behavior: smooth;
+}
+
+html body {
+  background-color: #303030;
+  margin: 0;
+  padding-top: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+}
+
+
+
+/* Animation de la barre de navigation : */
+
+@-webkit-keyframes disparition {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes disparition {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes rétrécissement1 {
+  from {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  to {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+}
+
+@keyframes rétrécissement1 {
+  from {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  to {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+}
+
+@-webkit-keyframes rétrécissement2 {
+  from {
+  }
+  to {
+    height: 0%;
+    width: 0%;
+  }
+}
+@keyframes rétrécissement2 {
+  from {
+  }
+  to {
+    height: 0%;
+    width: 0%;
+  }
+}
+
+
+
+/* Header : */
+
+html body header {
+  background-color: #101010;
+  margin: 0;
+}
+
+html body header #titre {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  padding-top: 2%;
+  text-align: center;
+}
+
+html body header #titre h1 {
+  font-size: 5em;
+}
+
+html body header #titre img {
+  height: 5%;
+  width: 15%;
+  vertical-align: middle;
+  padding: 0%;
+}
+
+html body header #titre h2 {
+  font-size: 2.5em;
+}
+
+html body header nav {
+  background-color: #202020;
+  text-transform: uppercase;
+  text-decoration: none;
+  text-align: center;
+}
+
+html body header nav ul {
+  padding: 0%;
+}
+
+html body header nav li {
+  padding: 10px;
+  list-style-type: none;
+  display: inline-block;
+  margin-right: 15px;
+}
+
+html body header nav li button {
+  height: 50px;
+  width: 110%;
+  border: none;
+  border-radius: 15px;
+  -webkit-box-shadow: 0px 7px 7px #101010;
+          box-shadow: 0px 7px 7px #101010;
+  font-size: 1.3em;
+  background-color: white;
+  cursor: pointer;
+}
+
+html body header nav li button:hover {
+  background-color: #D0D0D0;
+}
+
+html body header nav #hamburgeur {
+  visibility: hidden;
+}
+
+html body header nav #hamburgeur img {
+  height: 0%;
+  width: 0%;
+  vertical-align: middle;
+}
+
+@media only screen and (max-width: 1080px) {
+  html body header nav #hamburgeur {
+    visibility: visible;
+  }
+  html body header nav #hamburgeur img {
+    height: 10%;
+    width: 50px;
+  }
+  html body nav ul li, html body nav:active ul li {
+    display: none;
+    padding: 0%;
+    margin: 0%;
+    background-color: #202020;
+  }
+  html body nav:hover ul li {
+    padding: 10px;
+    -webkit-animation: disparition 3s;
+    animation: disparition 3s;
+    list-style-type: none;
+    display: inline-block;
+    margin-right: 15px;
+  }
+  html body nav:hover #hamburgeur img {
+    -webkit-animation: rétrécissement2 3s forwards;
+    animation: rétrécissement2 3s forwards;
+  }
+}
+
+
+
+/* Corp de la page : */
+
+html body .corps table {
+  border: 0;
+  margin: 0;
+  width: 100%;
+  text-align: center;
+}
+
+html body .corps table tr td {
+  margin: 15px;
+  border: 8px solid;
+  border-radius: 5px;
+  border-color: #ffffbf;
+  background-color: #fff0af;
+  -webkit-box-shadow: 0px 7px 7px #101010;
+          box-shadow: 0px 7px 7px #101010;
+}
+
+html body .corps table tr td h2 {
+  Color: #e51938;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+html body .corps table tr td .texte {
+  Color: #e51938;
+}
+
+html body .corps table tr td .texte a {
+  color: #ff3352;
+}
+
+html body .corps table tr td .texte h3 {
+  margin-bottom: 0%;
+}
+
+html body .corps table tr td .texte table tr td {
+  margin: 0px;
+  border: 0;
+  -webkit-box-shadow: 0px 0px 0px #101010;
+          box-shadow: 0px 0px 0px #101010;
+  border-radius: 0px;
+}
+
+
+
+/* Footer : */
+
+html body footer {
+  background-color: #202020;
+  text-align: center;
+}
+
+html body footer .navigation {
+  margin-top: 25px;
+  margin-bottom: 25px;
+  display: inline-block;
+  color: #e51938;
+  width: 100%;
+}
+
+html body footer .navigation a {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5px;
+  color: #e51938;
+  text-align: center;
+  text-decoration: none;
+  padding: 15px;
+}
+
+html body footer h2 {
+  color: #e5193870;
+  margin-bottom: 0px;
+  padding-bottom: 10px;
+}
+

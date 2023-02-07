@@ -1,0 +1,29 @@
+#Exercice 1
+def multiplication(n1, n2):
+    n3 = 0
+    negatif = False
+    if n1 < 0:
+        negatif = True
+        n1 = -n1
+    for i in range(n1):
+        n3 = n3 + n2
+    if negatif == True:
+        n3 = -n3
+    return n3
+
+
+
+#Exercice 2
+def chercher(tab, n, i, j):
+    if i < 0 or j > len(tab):
+        return None
+    elif i > j:#début après la fin
+        return None
+        
+    m = (i + j) // 2
+    if tab[m] < n:
+        return chercher(tab, n, m + 1, j)
+    elif tab[m] > n:
+        return chercher(tab, n, i, m - 1)
+    else:
+        return m
