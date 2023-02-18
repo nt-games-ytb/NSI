@@ -1,3 +1,16 @@
+#Exercice 1
+
+print("Exemple exercice 1 :")
+print(recherche(1,[2,3,4]))
+print(recherche(1,[10,12,1,56]))
+print(recherche(1, [1, 0, 42, 7]))
+print(recherche(1,[1,50,1]))
+print(recherche(1,[8,1,10,1,7,1,8]))
+print()
+
+
+
+#Exerice 2
 class AdresseIP:
 
     def __init__(self, adresse):
@@ -22,3 +35,9 @@ class AdresseIP:
             return AdresseIP('192.168.0.' + ...)
         else:
             return False
+
+print("Exemple exercice 2 :")
+adresse1, adresse2, adresse3 = '192.168.0.1', '192.168.0.2', '192.168.0.0'
+print(adresse1.est_reservee())
+print(adresse3.est_reservee())
+print(adresse2.adresse_suivante().adresse)

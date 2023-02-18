@@ -1,3 +1,16 @@
+#Exercice 1
+
+print("Exemple exercice 1 :")
+print(min_et_max([0, 1, 4, 2, -2, 9, 3, 1, 7, 1]))
+print(min_et_max([0, 1, 2, 3]))
+print(min_et_max([3]))
+print(min_et_max([1, 3, 2, 1, 3])
+print(min_et_max([-1, -1, -1, -1, -1]))
+print()
+
+
+
+#Exerice 2
 class Carte:
     def __init__(self, c, v):
         """ Initialise les attributs couleur (entre 1 et 4), et valeur (entre 1 et 13). """
@@ -24,3 +37,11 @@ class Paquet_de_cartes:
     def get_carte(self, pos):
         """ Renvoie la carte qui se trouve Ã  la position pos (entier compris entre 0 et 51). """
         # A complÃ©ter
+
+print("Exemple exercice 2 :")
+jeu = Paquet_de_cartes()
+carte1 = jeu.get_carte(20)
+print(carte1.get_valeur()+ " de " + carte1.get_couleur())
+carte2 = jeu.get_carte(0)
+print(carte2.get_valeur()+ " de " + carte2.get_couleur())
+carte3 = jeu.get_carte(52)

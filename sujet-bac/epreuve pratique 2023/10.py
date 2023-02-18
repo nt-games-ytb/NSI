@@ -43,7 +43,6 @@ class Pile:
         if self.est_vide() == False:
             self.valeurs.pop()
 
-
 def parenthesage(ch):
     """
     Renvoie True si la chaine ch est bien parenthesee et False sinon

@@ -19,7 +19,6 @@ print()
 
 
 #Exercice 2
-
 def inverse_chaine(chaine):
     result = ""
     for caractere in chaine:

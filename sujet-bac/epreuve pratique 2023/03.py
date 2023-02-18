@@ -10,6 +10,13 @@ def moyenne(liste):
     else:
         return valeur/coefficient
 
+print("Exemple exercice 1 :")
+print(moyenne([(8, 2), (12, 0), (13.5, 1), (5, 0.5)]))
+print(moyenne([(3, 0), (5, 0)]))
+print()
+
+
+
 #Exercice 2
 coeur = [[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
          [0, 0, 0, 1, 1, 0, 0, 0, 1, 1, 0, 0, 0],
@@ -46,3 +53,7 @@ def zoomDessin(grille, k):
         for i in range(k):
             grille_zoom.append(liste_zoom)
     return grille_zoom
+
+print("Exemple exercice 2 :")
+print(affiche(coeur))
+print(affiche(zoomDessin(coeur, 3)))

@@ -11,6 +11,13 @@ def indices_maxi(tab):
             indice_plus_grande_valeur.append(i)
     return (plus_grande_valeur, indice_plus_grande_valeur)
 
+print("Exemple exercice 1 :")
+print(indices_maxi([1, 5, 6, 9, 1, 2, 3, 7, 9, 8]))
+print(indices_maxi([7]))
+print()
+
+
+
 #Exercice 2
 def positif(pile):
     pile_1 = list(pile)
@@ -23,3 +30,7 @@ def positif(pile):
         x = pile_2.pop()
         pile_1.append(x)
     return pile_1
+
+print("Exemple exercice 2 :")
+print(positif([-1, 0, 5, -3, 4, -6, 10, 9, -8]))
+print(positif([-2]))

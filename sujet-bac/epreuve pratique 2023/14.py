@@ -1,18 +1,17 @@
 #Exercice 1
 def recherche(elt, tab):
-  indice = -1
-  for i in range(len(tab)):
-    if tab[i] == elt:
-      indice = i
-      return indice
-  return indice
+    indice = -1
+    for i in range(len(tab)):
+        if tab[i] == elt:
+            indice = i
+        return indice
+    return indice
   
 def recherche_mieux(elt, tab):
-  for i in range(len(tab)):
-    if tab[i] == elt:
-      indice = i
-      return i
-  return -1
+    for i in range(len(tab)):
+        if tab[i] == elt:
+            return i
+    return -1
   
 print("Exemple exercice 1 :")
 print(recherche_mieux(1, [2, 3, 4]))
@@ -34,9 +33,9 @@ def insere(a, tab):
     l.append(a)
     i = len(l) - 2
     while a < l[i] and i >= 0: 
-      l[i+1] = l[i]
-      l[i] = a
-      i = i - 1
+        l[i+1] = l[i]
+        l[i] = a
+        i = i - 1
     return l
     
 print("Exemple exercice 2 :")

@@ -1,3 +1,12 @@
+#Exercice 1
+
+print("Exemple exercice 1 :")
+print(moyenne())
+print()
+
+
+
+#Exerice 2
 def dichotomie(tab, x):
     """
         tab : tableau trié dans l’ordre croissant
@@ -21,3 +30,9 @@ def dichotomie(tab, x):
         else:
             fin = ...
     return ...
+
+print("Exemple exercice 2 :")
+print(dichotomie([15, 16, 18, 19, 23, 24, 28, 29, 31, 33], 28))
+print(dichotomie([15, 16, 18, 19, 23, 24, 28, 29, 31, 33], 27))
+print(dichotomie([15, 16, 18, 19, 23, 24, 28, 29, 31, 33], 1))
+print(dichotomie([], 28))

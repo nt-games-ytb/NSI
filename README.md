@@ -5,3 +5,4 @@ This is all of my NSI courses in 1er and in Terminal in the Thierry Maulnier hig
 **nt games** for working, doing the exercises and do some python scripts.  
 **Olivier Duranton** for being my teacher of NSI in 1er and in terminal. His site : [duranton.net](https://www.duranton.net)   
 **Florian Mathieu** for being my teacher of NSI in 1er. His site/git (gitlab) : [gitlab.com/Poueteuh](https://www.gitlab.com/Poueteuh)   
+For more info, join the [Terminal NSI discord server](https://discord.gg/xj6prUdSvq) !

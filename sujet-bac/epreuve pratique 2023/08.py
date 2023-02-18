@@ -10,6 +10,11 @@ def max_dico(dico):
             meilleur_like = dico[nom]
     return (meilleur_nom, meilleur_like)
 
+print("Exemple exercice 1 :")
+print(max_dico({'Bob': 102, 'Ada': 201, 'Alice': 103, 'Tim': 50}))
+print(max_dico({'Alan': 222, 'Ada': 201, 'Eve': 220, 'Tim': 50}))
+print()
+
 
 
 #Exercice 2
@@ -40,16 +45,18 @@ class Pile:
         if not self.est_vide():
             return self.contenu.pop()
 
-
 def eval_expression(tab):
     p = Pile()
     for element in tab:
-        if element != '+' or element != '*':#nombre #jsp pk les or ne marchent pas
+        if element != '+' and element != '*':
             p.empiler(element)
-        else:#opérateur
+        else:
             if element == "+":
                 resultat = p.depiler() + p.depiler()
             else:
                 resultat = p.depiler() * p.depiler()
             p.empiler(resultat)
     return p.depiler()
+
+print("Exemple exercice 2 :")
+print(eval_expression([2, 3, '+', 5, '*']))

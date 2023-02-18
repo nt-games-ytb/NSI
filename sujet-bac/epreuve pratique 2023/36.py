@@ -1,3 +1,16 @@
+#Exercice 1
+
+print("Exemple exercice 1 :")
+print(couples_consecutifs([1, 4, 3, 5]))
+print(couples_consecutifs([1, 4, 5, 3]))
+print(couples_consecutifs([1, 1, 2, 4]))
+print(couples_consecutifs([7, 1, 2, 5, 3, 4]))
+print(couples_consecutifs([5, 1, 2, 3, 8, -5, -4, 7]))
+print()
+
+
+
+#Exerice 2
 def propager(M, i, j, val):
     if M[i][j] == ...:
         M[i][j] = val
@@ -17,3 +30,8 @@ def propager(M, i, j, val):
     # l'element Ã  droite fait partie de la composante
     if ... and ...:
         propager(..., ..., ..., ...)
+
+print("Exemple exercice 2 :")
+M = [[0,0,1,0],[0,1,0,1],[1,1,1,0],[0,1,1,0]]
+propager(M,2,1,3)
+print(M)

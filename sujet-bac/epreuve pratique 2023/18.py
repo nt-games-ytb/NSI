@@ -1,7 +1,8 @@
 #Exercice 1
 def max_et_indice(tab):
     '''
-    max_et_indice prend en paramètre une liste tab non de nombre entiers et renvoie l'élément le plus grand ainsi que l'indice de sa premièr apparition sous la forme d'un tuple
+    max_et_indice prend en paramètre une liste tab non de nombre entiers et renvoie l'élément le plus grand
+    ainsi que l'indice de sa première apparition sous la forme d'un tuple
     '''
     assert type(tab)
     assert len(tab) >= 1

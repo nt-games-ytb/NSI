@@ -5,7 +5,13 @@ def recherche(tab, n):
         if tab[i] == n:
             resultat = i
     return resultat
-    
+
+print("Exemple exercice 1 :")
+print(recherche([5, 3],1))
+print(recherche([2,4],2))
+print(recherche([2,3,5,2,4],2))
+print()
+
 
 
 #Exercice 2
@@ -25,3 +31,9 @@ def plus_courte_distance(tab, depart):
             point = tab[i]
             min_dist = distance(tab[i], depart)
     return point
+
+print("Exemple exercice 2 :")
+print(distance((1,0),(5,3)))
+print(distance((1,0),(0,1)))
+print(plus_courte_distance([(7, 9), (2, 5), (5, 2)], (0, 0)))
+print(plus_courte_distance([(7, 9), (2, 5), (5, 2)], (5, 2)))

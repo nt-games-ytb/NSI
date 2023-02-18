@@ -14,6 +14,20 @@ def paire_6(tab):
             compteur = compteur + 1
     return compteur >= 2
 
+print("Exemple exercice 1 :")
+lancer1 = lancer(5)
+print(lancer1)
+print(paire_6(lancer1))
+lancer2 = lancer(5)
+print(paire_6(lancer2))
+lancer3 = lancer(3)
+print(paire_6(lancer3))
+lancer4 = lancer(0)
+print(paire_6(lancer4))
+print()
+
+
+
 #Exercice 2
 img=[[20, 34, 254, 145, 6], [23, 124, 237, 225, 69], [197, 174, 207, 25, 87], [255, 0, 24, 197, 189]]
 
@@ -52,10 +66,9 @@ def binaire(image, seuil):
                 L[i][j] = 1
     return L
     
-    
-    
-img=[[20, 34, 254, 145, 6], [23, 124, 237, 225, 69], [197, 174, 207, 25, 87], [255, 0, 24, 197, 189]]
-
-nbLig(img)
-
-nbCol(img)
+print("Exemple exercice 2 :")
+img = [[20, 34, 254, 145, 6], [23, 124, 237, 225, 69], [197, 174, 207, 25, 87], [255, 0, 24, 197, 189]]
+print(nbLig(img))
+print(nbCol(img))
+print(negatif(img))
+print(binaire(img,120))

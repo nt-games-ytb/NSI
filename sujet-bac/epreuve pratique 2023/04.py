@@ -7,7 +7,15 @@ def a_doublon(liste):
             return True
     return False
 
-        
+print("Exemple exercice 1 :")
+print(a_doublon([]))
+print(a_doublon([1]))
+print(a_doublon([1,2,4,6,6]))
+print(a_doublon([2,5,7,7,7,9]))
+print(a_doublon([0,2,3]))
+print()
+
+
 
 #Exerice 2
 def voisinage(n, ligne, colonne):
@@ -34,3 +42,5 @@ def genere_grille(bombes):
         incremente_voisins(grille, ligne, colonne)
     return grille
 
+print("Exemple exercice 2 :")
+print(genere_grille([(1,1),(2,4),(3,1),(3,3),(4,4)]))

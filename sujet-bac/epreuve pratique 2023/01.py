@@ -15,6 +15,14 @@ def verifie_2(tableau_de_valeurs):
             return False
     return True
 
+print("Exemple exercice 1 :")
+print(verifie([0, 5, 8, 8, 9]))
+print(verifie([8, 12, 4]))
+print(verifie([-1, 4]))
+print(verifie([5]))
+print()
+
+
 
 #Exercice 2
 urne = ['A', 'A', 'A','B', 'C', 'B', 'C','B', 'C', 'B']
@@ -37,3 +45,8 @@ def vainqueur(election):#Erreur: vainqueur est deux fois (fonction et variable) 
             #vainqueur = candidat
     liste_finale = [nom for nom in election if election[nom] == nmax]
     return liste_finale
+
+print("Exemple exercice 2 :")
+election = depouille(urne)
+print(election)
+print(vainqueur(election))

@@ -1,3 +1,15 @@
+#Exercice 1
+
+print("Exemple exercice 1 :")
+print(nombre_de_mots('Cet exercice est simple.'))
+print(nombre_de_mots('Le point d exclamation est separe!'))
+print(nombre_de_mots('Combien de mots y a t il dans cette phrase?'))
+print(nombre_de_mots('Fin.'))
+print()
+
+
+
+#Exerice 2
 class Noeud:
     def __init__(self, valeur):
         '''Méthode constructeur pour la classe Noeud. Paramètre d'entrée : valeur (int)'''
@@ -31,3 +43,12 @@ class Noeud:
             else:
                 # on crée un fils droit
                 ...  = Noeud(cle)
+
+print("Exemple exercice 2 :")
+arbre = Noeud(7)
+for cle in (3, 9, 1, 6):
+    arbre.inserer(cle)
+print(arbre.gauche.getValeur())
+print(arbre.droit.getValeur())
+print(arbre.gauche.gauche.getValeur())
+print(arbre.gauche.droit.getValeur())
