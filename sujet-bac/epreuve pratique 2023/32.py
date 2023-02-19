@@ -1,10 +1,24 @@
 #Exercice 1
+def min_et_max(tab):
+    '''
+    Fonction qui prend en paramètre tab, un tableau non-vide de nombres et
+    qui parcours le tableau pour trouver le plus petit nombre et le plus grand nombre
+    pour ainsi le renvoyer dans un dictionnaire à deux clés : "min" et "max"
+    '''
+    assert tab != [], "Le tableaux ne doit pas être vide !"
+    resultat = {"min": tab[0], "max": tab[0]}
+    for element in tab:
+        if resultat["min"] > element:
+            resultat["min"] = element
+        if resultat["max"] < element:
+            resultat["max"] = element
+    return resultat
 
 print("Exemple exercice 1 :")
 print(min_et_max([0, 1, 4, 2, -2, 9, 3, 1, 7, 1]))
 print(min_et_max([0, 1, 2, 3]))
 print(min_et_max([3]))
-print(min_et_max([1, 3, 2, 1, 3])
+print(min_et_max([1, 3, 2, 1, 3]))
 print(min_et_max([-1, -1, -1, -1, -1]))
 print()
 
@@ -23,20 +37,24 @@ class Carte:
         return valeurs[self.valeur - 1]
 
     def get_couleur(self):
-        """ Renvoie la couleur de la carte (parmi pique, coeur, carreau, trÃ¨fle). """
-        couleurs = ['pique', 'coeur', 'carreau', 'trÃ¨fle']
+        """ Renvoie la couleur de la carte (parmi pique, coeur, carreau, tréfle). """
+        couleurs = ['pique', 'coeur', 'carreau', 'tréfle']
         return couleurs[self.couleur - 1]
 
 class Paquet_de_cartes:
     def __init__(self):
         """ Initialise l'attribut contenu avec une liste des 52 objets Carte possibles
-            rangÃ©s par valeurs croissantes en commenÃ§ant par pique, puis coeur,
-            carreau et trÃ©fle. """
-        # A complÃ©ter
-
+            rangés par valeurs croissantes en commençant par pique, puis coeur,
+            carreau et tréfle. """
+        self.paquet = []
+        for couleur in range(4):
+            for valeur in range(13):
+                self.paquet.append(Carte(couleur + 1, valeur + 1))
     def get_carte(self, pos):
-        """ Renvoie la carte qui se trouve Ã  la position pos (entier compris entre 0 et 51). """
-        # A complÃ©ter
+        """ Renvoie la carte qui se trouve à la position pos (entier compris entre 0 et 51). """
+        assert pos >= 0, "La position est trop basse !"
+        assert pos <= 51, "La position est trop haute !" 
+        return self.paquet[pos]
 
 print("Exemple exercice 2 :")
 jeu = Paquet_de_cartes()
