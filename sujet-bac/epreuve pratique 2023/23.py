@@ -4,6 +4,7 @@ animaux = [ {'nom':'Medor',  'espece':'chien', 'age':5, 'enclos':2},
             {'nom':'Tom',    'espece':'chat',  'age':7, 'enclos':4},
             {'nom':'Belle',  'espece':'chien', 'age':6, 'enclos':3},
             {'nom':'Mirza',  'espece':'chat',  'age':6, 'enclos':5}]
+            
 def selection_enclos(table_animaux, num_enclos):
     resultat = []
     for element in table_animaux:
@@ -34,7 +35,7 @@ def trouver_intrus(tab, g, d):
         g et d sont des multiples de 3.
     '''
     if g == d:
-        return tab[g]
+        return tab[g] #ou tab[d]
 
     else:
         nombre_de_triplets = (d - g) // 3

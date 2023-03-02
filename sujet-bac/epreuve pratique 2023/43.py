@@ -1,4 +1,20 @@
 #Exercice 1
+def ecriture_binaire_entier_positif(n):
+    """
+    une fonction ecriture_binaire_entier_positif qui prend en paramètre un entier positif n
+    et renvoie une liste d'entiers correspondant à l'écriture binaire de n.
+    """
+    assert type(n) == int, "Ce n'est pas un entier !"
+    assert n >= 0, "L'entier ne pas positif !"
+    if n == 0:
+        return [0]
+    resultat = []
+    while n > 0:
+        b = n % 2
+        n = n // 2
+        resultat.append(b)
+    resultat.reverse()
+    return resultat
 
 print("Exemple exercice 1 :")
 print(ecriture_binaire_entier_positif(0))
@@ -11,14 +27,14 @@ print()
 #Exerice 2
 def tri_bulles(T):
     '''
-	Renvoie le tableau T triÃ© par ordre croissant
+	Renvoie le tableau T trié par ordre croissant
 	'''
     n = len(T)
-    for i in range(...,...,-1):
+    for i in range(n-1,-1, -1):
         for j in range(i):
-            if T[j] > T[...]:
-                ... = T[j]
-                T[j] = T[...]
+            if T[j] > T[j + 1]:
+                temp = T[j]
+                T[j] = T[j + 1]
                 T[j+1] = temp
     return T
 

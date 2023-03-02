@@ -1,9 +1,15 @@
 #Exercice 1
+def nombre_de_mots(phrase):
+    resultat = 0
+    for c in phrase:
+        if c in [".", " "]:
+            resultat = resultat + 1
+    return resultat
 
 print("Exemple exercice 1 :")
 print(nombre_de_mots('Cet exercice est simple.'))
-print(nombre_de_mots('Le point d exclamation est separe!'))
-print(nombre_de_mots('Combien de mots y a t il dans cette phrase?'))
+print(nombre_de_mots('Le point d exclamation est separe !'))
+print(nombre_de_mots('Combien de mots y a t il dans cette phrase ?'))
 print(nombre_de_mots('Fin.'))
 print()
 
@@ -27,22 +33,22 @@ class Noeud:
         return (self.gauche is not None)
     def inserer(self, cle):
         '''Méthode d'insertion de clé dans un arbre binaire de recherche Paramètre d'entrée : cle (int)'''
-        if cle < ... :
+        if cle < self.valeur : #ou self.getValeur()
             # on insère à gauche
             if self.gaucheExiste():
                 # on descend à gauche et on recommence le test initial
-                ...
+                self.gauche.inserer(cle)
             else:
                 # on crée un fils gauche
-                self.gauche = ...
-        elif cle > ...:
+                self.gauche = Noeud(cle)
+        elif cle > self.valeur: #ou self.getValeur()
             # on insère à droite
-            if ...:
+            if self.droitExiste():
                 # on descend à droite et on recommence le test initial
-                ...
+                self.droit.inserer(cle)
             else:
                 # on crée un fils droit
-                ...  = Noeud(cle)
+                self.droit = Noeud(cle)
 
 print("Exemple exercice 2 :")
 arbre = Noeud(7)

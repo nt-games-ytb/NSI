@@ -10,6 +10,12 @@ def multiplication(n1, n2):
     if negatif == True:
         resultat = -resultat
     return resultat
+    
+def multiplication_prof(n1, n2):
+    somme = 0
+    for i in range(abs(n1)):
+        somme += abs(n2)
+    return somme if ((n1 < 0) == (n2 < 0)) else -somme
 
 print("Exemple exercice 1 :")
 print(multiplication(3, 5))

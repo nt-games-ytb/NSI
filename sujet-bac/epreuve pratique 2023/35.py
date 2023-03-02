@@ -1,4 +1,12 @@
 #Exercice 1
+def ou_exclusif(tableau1, tableau2):
+    resultat = []
+    for i in range(len(tableau1)):
+        if tableau1[i] == tableau2[i]:
+            resultat.append(0)
+        else:
+            resultat.append(1)
+    return resultat
 
 print("Exemple exercice 1 :")
 a = [1, 0, 1, 0, 1, 1, 0, 1]
@@ -23,7 +31,7 @@ class Carre:
         self.tableau = [[liste[i + j * n] for i in range(n)] for j in range(n)]
 
     def affiche(self):
-        '''Affiche un carrÃ©'''
+        '''Affiche un carré'''
         for i in range(self.ordre):
             print(self.tableau[i])
 
@@ -45,18 +53,27 @@ class Carre:
         s = self.somme_ligne(0)
 
         #test de la somme de chaque ligne
-        for i in range(...):
-            if ... != s:
-                return ...
+        for i in range(self.ordre):
+            if self.somme_ligne(i) != s:
+                return False
 
         #test de la somme de chaque colonne
-        for j in range(...):
-            if ... != s:
-                return ...
+        for j in range(self.ordre):
+            if self.somme_col(j) != s:
+                return False
 
-        return ...
+        return True
 
 print("Exemple exercice 2 :")
-liste = (3, 4, 5, 4, 4, 4, 5, 4, 3)
-c3= Carre(liste, 3)
+liste_c2 = (3, 4, 5, 4, 4, 4, 5, 4, 3)
+c2 = Carre(liste_c2, 3)
+liste_c3 = (3, 4, 5, 4, 4, 4, 5, 4, 3)
+c3 = Carre(liste_c3, 3)
+liste_c3bis = (3, 4, 5, 4, 4, 4, 5, 4, 3)
+c3_bis = Carre(liste_c3bis, 3)
+print(c2.affiche())
+print(c2.est_semimagique())
 print(c3.affiche())
+print(c3.est_semimagique())
+print(c3_bis.affiche())
+print(c3_bis.est_semimagique())

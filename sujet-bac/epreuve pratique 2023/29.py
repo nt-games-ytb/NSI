@@ -50,7 +50,7 @@ def ajoute(indice, element, liste):
     else:
         for i in range(nbre_elts):
             L[i] = liste[i]
-        L[-1] = element
+        L[-1] = element #ou L[nbre_elts] = element
     return L
 
 print("Exemple exercice 2 :")

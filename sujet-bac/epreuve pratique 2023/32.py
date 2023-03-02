@@ -46,15 +46,15 @@ class Paquet_de_cartes:
         """ Initialise l'attribut contenu avec une liste des 52 objets Carte possibles
             rangés par valeurs croissantes en commençant par pique, puis coeur,
             carreau et tréfle. """
-        self.paquet = []
+        self.contenue = []
         for couleur in range(4):
             for valeur in range(13):
-                self.paquet.append(Carte(couleur + 1, valeur + 1))
+                self.contenue.append(Carte(couleur + 1, valeur + 1))
     def get_carte(self, pos):
         """ Renvoie la carte qui se trouve à la position pos (entier compris entre 0 et 51). """
-        assert pos >= 0, "La position est trop basse !"
-        assert pos <= 51, "La position est trop haute !" 
-        return self.paquet[pos]
+        assert pos >= 0, "paramètre pos invalide" #ou "La position est trop basse !"
+        assert pos <= 51, "paramètre pos invalide" #ou "La position est trop haute !" 
+        return self.contue[pos]
 
 print("Exemple exercice 2 :")
 jeu = Paquet_de_cartes()
