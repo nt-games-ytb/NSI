@@ -1,6 +1,5 @@
 #Exercice 1
 def tri_selection(tab):
-    resultat = []
     for i in range(len(tab)):
         plus_petite_valeur = tab[i]
         indice_plus_petit = i
@@ -10,9 +9,18 @@ def tri_selection(tab):
                 plus_petite_valeur = tab[j]
                 indice_plus_petit = j
 
-        resultat.append(plus_petite_valeur)
         tab[indice_plus_petit], tab[i] = tab[i], tab[indice_plus_petit]
-    return resultat
+    return tab
+    
+def tri_selection_prof(tab):
+    if len(tab) <= 1:
+        return tab
+    for indice in range(len(tab)-1):
+        indice_mini = indice
+        for i in range(indice+1, len(tab)):
+            if tab[indice_mini] > tab[i]:
+                indice_mini = i
+                
 
 print("Exemple exercice 1 :")
 print(tri_selection([1, 52, 6, -9, 12]))

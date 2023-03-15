@@ -16,6 +16,14 @@ def ecriture_binaire_entier_positif(n):
     resultat.reverse()
     return resultat
 
+def prof():
+    liste=[]
+    while n != 0:
+        liste.append(n%2)
+        n=n//2
+        liste.reverse()
+    return liste
+
 print("Exemple exercice 1 :")
 print(ecriture_binaire_entier_positif(0))
 print(ecriture_binaire_entier_positif(2))
@@ -30,7 +38,7 @@ def tri_bulles(T):
 	Renvoie le tableau T trié par ordre croissant
 	'''
     n = len(T)
-    for i in range(n-1,-1, -1):
+    for i in range(n-1,-1, -1): #ou n-1, 0, -1
         for j in range(i):
             if T[j] > T[j + 1]:
                 temp = T[j]

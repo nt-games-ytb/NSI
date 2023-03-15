@@ -385,7 +385,7 @@ def base16ToBase10V3(decimal):
         elif decimal[i] == "4":
             hexa = 4
         elif decimal[i] == "5":
-            rhexa = 5
+            hexa = 5
         elif decimal[i] == "6":
             hexa = 6
         elif decimal[i] == "7":

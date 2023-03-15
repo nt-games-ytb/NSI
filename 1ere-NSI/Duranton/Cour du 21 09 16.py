@@ -66,7 +66,7 @@ def quatrecaractereto10(binaire):
     elif binaire=="1111":
         return 15
 
-def cinqcaratereto10(binaire):
+def cinqcaractereto10(binaire):
     if binaire=="00000":
         return 0
     elif binaire=="00001":
@@ -134,9 +134,9 @@ def cinqcaratereto10(binaire):
 
 def sixcaractereto10(binaire):
     if binaire[0]=="0":
-        return cinqcaratereto10(binaire[1:])
+        return cinqcaractereto10(binaire[1:])
     elif binaire[0]=="1":
-        return 32+cinqcaratereto10(binaire[1:])
+        return 32+cinqcaractereto10(binaire[1:])
 
 def septcaractereto10(binaire):
     if binaire[0]=="0":
@@ -212,7 +212,7 @@ def maxuntobinaire(base10):
 def maxtroistobinaireV2(base10):
     if base10[0]==0:
         return 0#huitcaractereto10(binaire[1:])
-    elif binaire[0]==1:
+    elif base10[0]==1:
         return 1#256+huitcaractereto10(binaire[1:])
 
 def maxtroistobinaire(base10):

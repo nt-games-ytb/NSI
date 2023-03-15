@@ -8,6 +8,12 @@ def rangement_valeurs(notes):
             if notes[j] == i:
                 resultat[i] = resultat[i] + 1
     return resultat
+    
+def rangement_valeurs_prof(notes_eval):
+    resultat = [0] * 11
+    for notes in notes_eval
+        resultat[note] += 1
+    return resultat
 
 def notes_triees(liste):
     resultat = []

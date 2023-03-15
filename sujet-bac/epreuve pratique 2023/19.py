@@ -35,7 +35,7 @@ def cesar(message, decalage):
     resultat = ''
     for c in message:
         if 'A' <= c and c <= 'Z': #si le caractère est dans l'alphabet
-            indice = ((position_alphabet(c) + decalage)) % 26
+            indice = (position_alphabet(c) + decalage) % 26
             resultat = resultat + ALPHABET[indice]
         else: #sinon on ajoute le caractère
             resultat = resultat + c

@@ -16,19 +16,16 @@ n0 = ABR(None, 0, None)
 n3 = ABR(None, 3, None)
 n2 = ABR(None, 2, n3)
 abr1 = ABR(n0, 1, n2)
-    
+
 def ajoute(cle, a):
-    if cle < a.cle:
-        if a.gauche == None:
-            a.gauche = (None, cle, None)
-        else:    
-            ajoute(cle, a.gauche)
-    elif cle > a.cle:
-        if a.droit == None:
-            a.droit = (None, cle, None)
-        else:    
-            ajoute(cle, a.droit)
-    return a
+    if a is None:
+        return ABR(None, cle, None)
+    elif cle == a.cle:
+        return a
+    elif cle < a.cle:
+        return ABR(ajoute(cle, a.gauche), a.cle, a.droit)
+    else:
+        return ABR(a.gauche, a.cle, ajoute(cle, a.droit))
 
 def ajoute_test(cle, a):#marche pas car renvoie le dernier arbre
     if cle < a.cle:
@@ -52,6 +49,19 @@ def ajoute_test_1(cle, a):#marche mais interdit car recréer un arbre
         return ABR(a.gauche, a.cle, ajoute_test_1(cle, a.droit))
     else:
         return a
+    
+def ajoute_test_2(cle, a):#marche mais modifie l'ancien arbre
+    if cle < a.cle:
+        if a.gauche == None:
+            a.gauche = (None, cle, None)
+        else:    
+            ajoute_test_2(cle, a.gauche)
+    elif cle > a.cle:
+        if a.droit == None:
+            a.droit = (None, cle, None)
+        else:    
+            ajoute_test_2(cle, a.droit)
+    return a
     
 print("Exemple exercice 1 :")
 print(abr1)
