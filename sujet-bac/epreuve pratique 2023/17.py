@@ -1,5 +1,5 @@
 #Exercice 1
-def moyenne(liste_notes):
+def moyenne_old(liste_notes):
     moyenne = 0
     total_points = 0
     total_coefficients = 0
@@ -7,7 +7,17 @@ def moyenne(liste_notes):
         total_points = total_points + element[0] * element[1]
         total_coefficients = total_coefficients + element[1]
     return total_points / total_coefficients
-    
+
+def moyenne(liste_notes):
+    somme = 0
+    coefficient = 0
+    for element in liste_notes:
+        somme = somme + element[0] * element[1]
+        coefficient = coefficient + element[1]
+    if coefficient == 0:
+        return None
+    return somme / coefficient
+
 print("Exemple exercice 1 :")
 print(moyenne([(15, 2), (9, 1), (12, 3)]))
 print()

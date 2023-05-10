@@ -5,6 +5,8 @@ def couples_consecutifs(tab):
     tab non vide, et qui renvoie la liste (éventuellement vide) des couples d'entiers
     consécutifs successifs qu'il peut y avoir dans tab.
     '''
+    assert type(tab) == list
+    assert tab != []
     resultat = []
     for i in range(len(tab) - 1):
         if tab[i] + 1 == tab[i + 1]:

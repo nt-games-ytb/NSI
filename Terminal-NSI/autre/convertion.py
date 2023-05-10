@@ -1,11 +1,17 @@
 def base10ToBinaire(base10):
-    longueur = len(str(base10))
-    resultat = ""
-    for i in range(longueur):
-        chiffre = str(base10)[i]
-        nombre = chiffre * 2**(longueur - i - 1)
-        resultat = resultat + nombre
-    return resultat
+    i=0
+    while 2**i <= base10:
+        i = i + 1
+    i = i - 1
+    sortie = ""
+    while i >= 0:
+        if 2**i <= base10:
+            sortie= sortie + "1"
+            base10 = base10 - 2**i
+        else:
+            sortie = sortie + "0"
+        i = i - 1
+    return sortie
 
 def binaireToBase10(binaire):
     longueur = len(binaire)
